@@ -1,0 +1,88 @@
+[class^="btn-ms"] {
+	box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 7.5%);
+  	display: inline-block;
+	font-weight: 500;
+	letter-spacing: 0.9px;
+  	margin: 15px 0;
+	min-width: 171px;
+	overflow: hidden;
+	padding: 15px 30px;
+	position: relative;
+	text-align: center;
+	transition: 0.51s ease-in-out;
+	z-index: 1;
+}
+[class^="btn-ms"] > span {
+	display: block;
+	height: 0;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	transition: width 0.39s ease-in-out, height 0.39s ease-in-out;
+	width: 0;
+  	z-index: -1;
+}
+[class^="btn-ms"]:hover > span {
+	width: 225%;
+	height: 225%;
+}
+.btn-ms-primary {
+	background-color: #0071CF;
+	border: 1px solid #0071CF;
+  	color: #fff;
+}
+.btn-ms-primary:hover {
+	background-color: transparent;
+	border: 1px solid #0071CF;
+	color: #0071CF;
+}
+.btn-ms-primary span, .btn-ms-primary:active {
+  	background-color: #fff;
+}
+.btn-ms-info {
+	background-color: #fff;
+	border: 1px solid #fff;
+	color: #004e72;
+}
+.btn-ms-info:hover {
+	border: 1px solid #FFE6CC;
+  	color: #004e72;
+}
+.btn-ms-info span, .btn-ms-info:active {
+	background-color: #FFE6CC;
+}
+.btn-ms-default {
+	background-color: transparent;
+	border: 1px solid #004e72;
+  	color: #004e72;
+}
+.btn-ms-default:hover {
+  	color: #fff;
+}
+.btn-ms-default span, .btn-ms-default:active {
+	background-color: #004e72;
+}
+.btn-ms-success {
+	background-color: #004e72;
+	border: 1px solid #004e72;
+  	color: #fff;
+}
+.btn-ms-success:hover {
+	background-color: transparent;
+	border: 1px solid #004e72;
+  	color: #004e72;
+}
+.btn-ms-success span, .btn-ms-success:active {
+	background-color: #fff;
+}
+.btn-ms-danger {
+	background-color: #D4403A;
+	border: 1px solid #D4403A;
+	color: #fff;
+}
+.btn-ms-danger:hover {
+	background-color: transparent;
+  	color: #D4403A;
+}
+.btn-ms-danger span, .btn-ms-danger:active {
+	background-color: #fff;
+}

@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Base meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=0.80">
+
+	<!-- Descriptive meta -->
+	<title>Capital BlueCross</title>
+	<meta name="title" content="max 65 character title">
+	<meta name="description" content="max 165 character description">
+	<meta name="keywords" content="comma, separated, list">
+	<meta name="author" content="Capital BlueCross">
+
+	<!-- CDN loaded CSS assets, we are loading these from CDN for performance however assets can be loaded locally if desired -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+
+	<!-- CDN loaded JS assets -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+
+	<!-- These plugins are optional and should only be loaded where video/rotating image banners are used -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vide/0.5.1/jquery.vide.min.js"></script>
+	<script src="assets/js/jquery.bgswitcher.js"></script>
+
+	<!-- CBC specific assets -->
+	<link href="assets/css/app.css" rel="stylesheet"><!-- Global portal stying -->
+	<link href="assets/css/banners.css" rel="stylesheet"><!-- Page banners -->
+	<link href="assets/css/cbc-icons.css" rel="stylesheet"><!-- CBC sprite icon pack -->
+	<script src="assets/js/app.js"></script>
+</head>
+
+<body id="content" class="lotusui30dojo tundra claro locale_en toolbar-closed" style="padding-top: 167px;">
+	<header class="stFixedNavbar">
+		<!-- site toolbar -->
+		<div id="stBanner" class="">
+			<nav class="navbar navbar-default navbar-fixed-top" id="cbcnavdesign" data-swiftype-index="false">
+				<div class="alert-bar nobottompadding" style="background-color: #004e72">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="text-center">New two-step authentication will help protect your personal
+									information. Set yours up today. <a
+										href="https://www.capbluecross.com/UserSecurity/Login.xhtml" target="_blank"
+										aria-label="Go to the secure login page" class="dark-bg-anchor">Sign in</a> to
+									get started.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="top-header">
+					<div class="container" data-swiftype-index="false">
+						<div id="env_" class="envDisplay pull-left visible-md-block visible-lg-block"></div>
+						<div class="menu-block pull-left">
+							<ul>
+								<li><a href="/wps/portal/cap/members" class="btn btn-link">Shop</a></li>
+								<li><a href="/wps/portal/cap/employer" class="btn btn-link">Employers</a></li>
+								<li><a href="/wps/portal/cap/producer" class="btn btn-link">Producers</a></li>
+								<li><a href="/wps/portal/cap/provider" class="btn btn-link">Providers</a></li>
+							</ul>
+						</div>
+						<div class="menu-block pull-right">
+							<ul>
+								<li><a class="langLink btn btn-link" data-href="es.capbluecross.com"
+										href="//es.capbluecross.com" data-lang="es" mporgnav=""><em class="fa fa-globe"
+											aria-hidden="true"></em> Español</a></li>
+								<li id="login-li" class="dropdown">
+									<a href="https://www.capbluecross.com/UserSecurity/Login.xhtml"
+										class="btn btn-link"><em class="fa fa-lock" aria-hidden="true"></em> Login</a>
+									<span>|</span>
+									<div id="popup" class="popup" style="display: none;">
+										<div class="inner">
+											<div class="menu-block no-pad">
+												<ul style="list-style:none; margin-right: 10px">
+													<li><em class="fa fa-lock"
+															style="font-size:35px; padding-left:50%; color:#006f9e;"
+															aria-hidden="true"></em>
+														<div id="close" class="close">×</div>
+													</li>
+												</ul>
+											</div>
+											<ul
+												style="padding:0; list-style:none; text-align:center; margin-left:15px; margin-right:15px;">
+												<li style="font-size: 17px; padding-top:5px; display: inline-block;">Are
+													you a <br>Capital Blue Cross <br>customer?</li>
+												<br>
+												<li style="font-size:13px; padding-top:5px; display: inline-block;"><a
+														href="https://www.capbluecross.com/UserSecurity/Login.xhtml">Log
+														in</a> to your secure account for the best experience.</li>
+												<br>
+												<li style="font-size:10px; padding-top:5px; display: inline-block;">If
+													you don't have an account, set up takes just a few minutes. <a
+														href="https://www.capbluecross.com/UserSecurity/Registration/RegistrationStart.xhtml">Register</a>
+													today!</li>
+											</ul>
+										</div>
+									</div>
+									<a class="btn btn-link"
+										href="https://www.capbluecross.com/UserSecurity/Registration/RegistrationStart.xhtml">Register</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- top-secondary-navigation -->
+				<!-- not edit mode -->
+				<!-- top-nav -->
+				<div id="stMobileNavBackground" class="stMobileNavBackground"></div>
+				<div id="stNavContainer" class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#cbc_main_navigation" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="style-guide.html">
+							<img src="assets/img/global/capital-blue-cross-logo.png" alt="Capital Blue Cross">
+						</a>
+					</div>
+					<div class="collapse navbar-collapse cbcmobilenavbar" id="cbc_main_navigation">
+						<div class="pull-right">
+							<span class="uil uil-search"></span>
+						</div>
+						<ul class="nav navbar-nav pull-right">
+							<li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle"
+									data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+									tabindex="0">Our plans <span class="uil uil-angle-down"></span></a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="/wps/portal/cap/home/shop" tabindex="0"> <span
+												lang="en" dir="ltr">Find your plan</span></a>
+									</li>
+									<li><a class="dropdown-item" href="/wps/portal/cap/home/shop/individual"
+											tabindex="0"> <span lang="en" dir="ltr">Individual and family</span></a>
+									</li>
+									<li><a class="dropdown-item" href="/wps/portal/cap/home/shop/chip" tabindex="0">
+											<span lang="en" dir="ltr">CHIP</span></a></li>
+									<li><a class="dropdown-item" href="/wps/portal/cap/home/shop/medicare"
+											target="_blank" tabindex="0"> <span lang="en" dir="ltr">Medicare</span></a>
+									</li>
+									<li><a class="dropdown-item" href="/wps/portal/cap/home/shop/medicare-supplement"
+											tabindex="0"> <span lang="en" dir="ltr">Medicare Supplement</span></a></li>
+									<li><a class="dropdown-item" href="/wps/portal/cap/home/shop/employer-health-plan"
+											tabindex="0"> <span lang="en" dir="ltr">Employer health plans</span></a>
+									</li>
+									<li><a class="dropdown-item" href="/wps/portal/cap/home/shop/other" tabindex="0">
+											<span lang="en" dir="ltr">Travel and more</span></a></li>
+									<li><a class="dropdown-item" href="/wps/portal/cap/home/shop/student-plan"
+											tabindex="0"> <span lang="en" dir="ltr">Student health plan</span></a></li>
+								</ul>
+								<div></div>
+							</li>
+							<li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle"
+									data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+									tabindex="0">Your care <span class="uil uil-angle-down"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="/wps/portal/cap/home/find" tabindex="0"> <span lang="en"
+												dir="ltr"><!-- print out the page title -->Plan resources</span></a>
+									</li>
+									<li><a href="/wps/portal/cap/home/find/my-care-finder" tabindex="0"> <span lang="en"
+												dir="ltr">Doctors and facilities</span></a></li>
+									<li><a href="/wps/portal/cap/home/find/drug" tabindex="0"> <span lang="en"
+												dir="ltr">Prescription drugs</span></a></li>
+									<li><a href="/wps/portal/cap/home/find/id-card" target="_blank" tabindex="0"><span
+												lang="en" dir="ltr">ID card</span><em class="fa fa-lock iconleftMargin"
+												aria-hidden="true"> </em></a></li>
+									<li><a href="/wps/portal/cap/home/find/your-claims" target="_blank" tabindex="0">
+											<span lang="en" dir="ltr">Your claims</a></li>
+									<li><a href="/wps/portal/cap/home/find/your-benefits" target="_blank" tabindex="0">
+											<span lang="en" dir="ltr">Your benefits</span><em
+												class="fa fa-lock iconleftMargin" aria-hidden="true"> </em></a></li>
+								</ul>
+								<div></div>
+							</li>
+							<li class="dropdown">
+								<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"
+									role="button" aria-haspopup="true" aria-expanded="false" tabindex="0">Resources <span class="uil uil-angle-down"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="/wps/portal/cap/home/explore" tabindex="0"> <span lang="en"
+												dir="ltr"><!-- print out the page title -->Explore</span></a></li>
+									<li><a href="/wps/portal/cap/home/explore/form" tabindex="0"> <span lang="en"
+												dir="ltr">Forms</span></a></li>
+									<li><a href="/wps/portal/cap/home/explore/resource" tabindex="0"> <span lang="en"
+												dir="ltr"> Member resources</span></a></li>
+									<li><a href="/wps/portal/cap/home/explore/store" target="_blank" tabindex="0"> <span
+												lang="en" dir="ltr"> Capital Blue Cross Connect</span></a></li>
+								</ul>
+								<div></div>
+							</li>
+							<li class="dropdown"><a href="/wps/portal/cap/home/contact" tabindex="0">Contact us</a></li>
+						</ul>
+					</div>
+					<div class="stClear"></div>
+				</div>
+				<script>
+					$(document).ready(function () {
+						var height = $($("header #stBanner nav.navbar.navbar-default.navbar-fixed-top")[0]).height();
+						$("body#content").css("padding-top", height + "px");
+					});
+				</script>
+			</nav>
+		</div>
+	</header>
+	<!-- Begin main page content -->
+	<style>
+		.carousel-container {
+			cursor: grab;
+			overflow: hidden;
+			position: relative;
+			user-select: none;
+		}
+		.carousel-container:active {
+			cursor: grabbing;
+		}
+		.carousel-slider {
+			display: flex;
+			overflow-x: auto;
+			scroll-behavior: smooth;
+			scroll-snap-type: x mandatory;
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+		}
+		.carousel-slider::-webkit-scrollbar {
+			display: none;
+		}
+		.carousel-slide {
+			display: none;
+			flex: 1 0 100%;
+			scroll-snap-align: start;
+			opacity: 0;
+			transition: opacity 0.6s ease-in-out;
+		}
+		.carousel-slide.active {
+			display: flex;
+			opacity: 1;
+		}
+		.carousel-slide > .container {
+			align-items: center;
+			display: flex;
+			overflow: hidden;
+			padding-bottom: 12rem;
+			padding-top: 4.5rem;
+			position: relative;
+		}
+		.carousel-content {
+			flex: 1;
+			opacity: 0;
+			text-align: left;
+			transform: translateX(-4.5rem);
+    		transition: transform 1.2s, opacity 1.2s;
+		}
+		.carousel-content.flex-right .carousel-content-copy {
+			padding: 0 3rem 0 12rem;
+		}
+		.carousel-content::before {
+			content: '';
+			left: 50%;
+			max-height: 750px;
+			min-height: 516px;
+			position: absolute;
+			top: 50%;
+			transform: translate(-42%, -51%);
+			width: 150vw;
+			z-index: -1;
+		}
+		.carousel-content-copy {
+			padding: 0 3rem
+		}
+		.flex-blue-green > .carousel-content-copy > h1, .flex-blue-green > .carousel-content-copy > h2,
+		.flex-blue-green > .carousel-content-copy > p, .flex-blue-green > .carousel-content-copy > .lead {
+			color: #fff;
+		}
+		.carousel-slide.active .carousel-content {
+			opacity: 1;
+			transform: translateX(0);
+		}
+		.carousel-image {
+			flex: 1;
+			object-fit: cover;
+			height: 600px;
+			width: 100%;
+			z-index: 1;
+		}
+		.carousel-slider-nav {
+			bottom: 10.2rem;
+			display: flex;
+			gap: 1.2rem;
+			justify-content: center;
+			left: 71.1%;
+			position: absolute;
+			transform: translateX(-50%);
+		}
+		.carousel-slider-nav a {
+			background-color: #CFD1D1;
+			border: 1px solid #CFD1D1;
+			height: .45rem;
+			transition: all 0.15s ease-in-out;
+			width: 12rem;
+		}
+		.carousel-slider-nav a:hover, .carousel-slider-nav a.active {
+			background-color: #004e72;
+			border: 1px solid #004e72;
+		}
+	</style>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const slides = document.querySelectorAll('.carousel-slide');
+			const navLinks = document.querySelectorAll('.carousel-slider-nav a');
+			const carouselContainer = document.querySelector('.carousel-container');
+			let currentSlide = 0;
+			let slideInterval;
+			let startX;
+
+			function showSlide(index) {
+				// Hide the currently active slide
+				const activeSlide = document.querySelector('.carousel-slide.active');
+				if (activeSlide) {
+					activeSlide.classList.remove('active');
+					activeSlide.style.opacity = '0';
+					setTimeout(() => {
+						activeSlide.style.display = 'none';
+					}, 600); // Match the transition time in your CSS
+				}
+
+				// Show the targeted slide
+				const targetSlide = slides[index];
+				targetSlide.style.display = 'flex';
+				requestAnimationFrame(() => {
+					requestAnimationFrame(() => {
+						targetSlide.style.opacity = '1';
+						targetSlide.classList.add('active');
+					});
+				});
+
+				// Update the navigation dots
+				navLinks.forEach((dot, dotIndex) => {
+					if (dotIndex === index) {
+						dot.classList.add('active');
+					} else {
+						dot.classList.remove('active');
+					}
+				});
+
+				// Reset the interval
+				clearInterval(slideInterval);
+				slideInterval = setInterval(nextSlide, 9000);
+			}
+
+			// Function to go to the next slide
+			function nextSlide() {
+				currentSlide = (currentSlide + 1) % slides.length;
+				showSlide(currentSlide);
+			}
+
+			// Function to go to the previous slide
+			function prevSlide() {
+				currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+				showSlide(currentSlide);
+			}
+
+			// Set interval for slides to change
+			slideInterval = setInterval(nextSlide, 9000);
+
+			// Add click event listeners to navigation dots
+			navLinks.forEach((link, index) => {
+				link.addEventListener('click', function(e) {
+					e.preventDefault();
+					currentSlide = index;
+					showSlide(currentSlide);
+				});
+			});
+
+			// Add touch event listeners for swipe functionality
+			document.addEventListener('touchstart', function(e) {
+				startX = e.touches[0].clientX;
+			});
+
+			document.addEventListener('touchmove', function(e) {
+				if (!startX) return;
+
+				let moveX = e.touches[0].clientX;
+				let diffX = startX - moveX;
+
+				if (Math.abs(diffX) > 50) {
+					if (diffX > 0) {
+						nextSlide();
+					} else {
+						prevSlide();
+					}
+					startX = null; // Reset startX after a successful swipe
+				}
+			});
+
+			// Add mouse event listeners for swipe functionality on desktop
+			document.addEventListener('mousedown', function(e) {
+				startX = e.clientX;
+				carouselContainer.classList.add('active');
+			});
+
+			document.addEventListener('mousemove', function(e) {
+				if (!startX) return;
+
+				let moveX = e.clientX;
+				let diffX = startX - moveX;
+
+				if (Math.abs(diffX) > 50) {
+					if (diffX > 0) {
+						nextSlide();
+					} else {
+						prevSlide();
+					}
+					startX = null; // Reset startX after a successful swipe
+				}
+			});
+
+			document.addEventListener('mouseup', function() {
+				startX = null; // Reset startX on mouse up
+				carouselContainer.classList.remove('active');
+			});
+
+			// Add keyboard navigation
+			document.addEventListener('keydown', function(e) {
+				if (e.key === 'ArrowRight') {
+					nextSlide();
+				} else if (e.key === 'ArrowLeft') {
+					prevSlide();
+				}
+			});
+
+			// Initialize the first slide
+			showSlide(currentSlide);
+		});
+
+	</script>
+	<div class="carousel-container" role="region" aria-label="Carousel">
+		<div class="carousel-slider">
+			<div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
+				<div class="container">
+					<div class="carousel-content flex-light-grey">
+						<div class="carousel-content-copy">
+							<h1 class="xl-h1">Shop for plans</h1>
+							<p class="lead">We have plans to meet your needs.</p>
+							<a href="#" class="btn btn-primary">Shop</a>
+						</div>
+					</div>
+					<img src="assets/img/global/shop.jpg" alt="Shop" class="carousel-image">
+				</div>
+			</div>
+			<div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3">
+				<div class="container">
+					<div class="carousel-content flex-blue-green flex-right">
+						<div class="carousel-content-copy">
+							<h2 class="h1">Capital Journal</h2>
+							<hr class="h1-hr">
+							<p class="lead">Wellness resources to stay healthy.</p>
+							<a href="#" class="btn btn-info">Stay healthy and informed</a>
+						</div>
+					</div>
+					<img src="assets/img/global/capital-journal.jpg" alt="Capital Journal" class="carousel-image flex-left">
+				</div>
+			</div>
+			<div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3">
+				<div class="container">
+					<div class="carousel-content flex-grey">
+						<div class="carousel-content-copy">
+							<h2 class="xl-h1">Need care?</h2>
+							<p class="lead">See a doctor anytime, anywhere.</p>
+							<a href="#" class="btn btn-success">Learn more about VirtualCare</a>
+						</div>
+					</div>
+					<img src="assets/img/global/virtual-care.jpg" alt="VirtualCare" class="carousel-image">
+				</div>
+			</div>
+		</div>
+		<div class="container carousel-slider-nav">
+			<a href="#slide-1" role="button" aria-label="Go to slide 1"></a>
+			<a href="#slide-2" role="button" aria-label="Go to slide 2"></a>
+			<a href="#slide-3" role="button" aria-label="Go to slide 3"></a>
+		</div>
+	</div>	
+	<div class="component-control id-Z7_MAI21141L8V800QQ9UURRPPI26">
+		<div class="ibmPortalControl stControl wpthemeControl a11yRegionTarget"
+			aria-labelledby="wpRegionIdZ7_MAI21141L8V800QQ9UURRPPI26">
+			<div class="stControlBody stOverflowAuto wpthemeControlBody">
+				<div class="content">
+					<div class="container" id="rich-text">
+						<div class="row">
+							<div class="col-md-12" data-swiftype-name="body" data-swiftype-type="text">
+								<h2 class="text-center">Learn how we can help you be healthy and stay well.</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="component-control id-Z7_MAI21141L0HF00QOH5RVRE7B25">
+		<!-- The Control element contains the portlet banner and the portlet content. -->
+		<div class="ibmPortalControl stControl wpthemeControl a11yRegionTarget"
+			aria-labelledby="wpRegionIdZ7_MAI21141L0HF00QOH5RVRE7B25">
+			<!-- The ControlBody element contains the portlet content. -->
+			<div class="stControlBody stOverflowAuto wpthemeControlBody">
+				<!-- The "lm:control" dynamic spot is used for the markup of a layout control. -->
+				<style>
+					.icon-grid {
+						display: flex;
+						flex-wrap: wrap;
+						gap: 4.5rem;
+						justify-content: center;
+						--stagger-delay: 150ms;
+					}
+
+					.icon-grid-col {
+						background-color: #fff;
+						box-shadow: 0px 0px 21px 3px rgb(0, 0, 0, 6%);
+						color: #222;
+						flex: 1;
+						max-width: 345px;
+						min-width: 345px;
+						opacity: 0;
+						position: relative;
+						top: 0;
+						transform: translateY(51px);
+						transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out, top cubic-bezier(0.24, 0.15, 0.24, 1) 0.21s;
+					}
+
+					.icon-grid-col.lazy-loaded {
+						opacity: 1;
+						transform: translateX(0);
+					}
+
+					.icon-grid-col:hover {
+						top: -9px;
+					}
+
+					.icon-grid-col>a {
+						line-height: 0;
+						font-size: 0;
+						color: transparent;
+						z-index: 2;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+					}
+
+					.icon-grid-col img {
+						margin: 60px 0 27px;
+						max-height: 90px;
+						max-width: 100%;
+					}
+
+					.icon-grid-col-content {
+						padding: 15px 45px 30px;
+					}
+				</style>
+				<script>
+					document.addEventListener("DOMContentLoaded", function() {
+						const gridCols = document.querySelectorAll('.icon-grid-col');
+
+						const observer = new IntersectionObserver((entries, observer) => {
+							entries.forEach((entry, index) => {
+								if (entry.isIntersecting) {
+									setTimeout(() => {
+										entry.target.classList.add('lazy-loaded');
+									}, index * 90);
+									observer.unobserve(entry.target);
+								}
+							});
+						}, {
+							threshold: 0.1
+						});
+
+						gridCols.forEach(col => {
+							observer.observe(col);
+						});
+					});
+				</script>
+				<div class="default-component-spacing central-page-component" data-swiftype-name="body"
+					data-swiftype-type="text">
+					<div class="content icon-grid text-center">
+						<div class="icon-grid-col in-viewport" style="border-top: 12px solid #004e72;">
+							<a href="#" target="_blank" aria-label="Find a doctor"></a>
+							<img src="assets/img/global/find_a_doctor.jpg">
+							<div class="icon-grid-col-content">
+								<h3>Find a doctor</h3>
+								<p dir="ltr">Search for a provider for you and your family.<span
+										class="external-link"><a target="_blank" title=""
+											href="/wps/portal/cap/about/disclaimer/"
+											class="external-link-icon fa fa-external-link"
+											aria-label="External link disclaimer"></a></span></p>
+							</div>
+						</div>
+						<div class="icon-grid-col in-viewport" style="border-top: 12px solid #76BD22;">
+							<a href="#" target="_blank" aria-label="Medicare"></a>
+							<img src="assets/img/global/medicare.jpg">
+							<div class="icon-grid-col-content">
+								<h3>Medicare</h3>
+								<p dir="ltr">Navigating your coverage options.<span class="external-link"><a
+											target="_blank" title="" href="/wps/portal/cap/about/disclaimer/"
+											class="external-link-icon fa fa-external-link"
+											aria-label="External link disclaimer"></a></span></p>
+							</div>
+						</div>
+						<div class="icon-grid-col in-viewport" style="border-top: 12px solid #FFC72A;">
+							<a href="#" target="_self" aria-label="Member perks"></a>
+							<img src="assets/img/global/member_perks.jpg">
+							<div class="icon-grid-col-content">
+								<h3>Member perks</h3>
+								<p dir="ltr">Tools to help you live healthy.</p>
+							</div>
+						</div>
+						<div class="icon-grid-col in-viewport" style="border-top: 12px solid #FF8400;">
+							<a href="#" target="_self" aria-label="Discover"></a>
+							<img src="assets/img/global/discover.jpg">
+							<div class="icon-grid-col-content">
+								<h3>Discover</h3>
+								<p>Search our site or contact us.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="component-control id-Z7_MAI21141LOG0006U5G93QIICV2">
+		<div class="ibmPortalControl stControl wpthemeControl a11yRegionTarget"
+			aria-labelledby="wpRegionIdZ7_MAI21141LOG0006U5G93QIICV2">
+			<div class="stControlBody stOverflowAuto wpthemeControlBody">
+				<style>
+					.flex-wrapper {
+						overflow: hidden;
+					}
+
+					.flex-box {
+						align-items: center;
+						display: flex;
+						flex-wrap: wrap;
+						gap: 15rem;
+						opacity: 0;
+						padding-bottom: 12rem;
+						padding-top: 15rem;
+						transition: opacity 0.6s ease-in-out;
+					}
+
+					.flex-box.lazy-loaded {
+						opacity: 1;
+					}
+
+					.flex-box-content,
+					.flex-box-image {
+						flex: 1;
+						min-width: 477px;
+						position: relative;
+					}
+
+					.flex-box-content {
+						opacity: 0;
+						transform: translateX(-4.5rem);
+						transition: transform 1.2s, opacity 1.2s;
+					}
+
+					.flex-box-content.lazy-loaded {
+						opacity: 1;
+						transform: translateX(0);
+					}
+
+					.flex-box-copy {
+						z-index: 1;
+					}
+
+					.flex-box-content::before {
+						content: '';
+						left: 50%;
+						max-height: 750px;
+						min-height: 543px;
+						position: absolute;
+						top: 50%;
+						transform: translate(-42%, -51%);
+						width: 150vw;
+						z-index: -1;
+					}
+
+					.flex-box-content.flex-left::before {
+						width: 117vw;
+					}
+
+					.flex-box-image {
+						text-align: right;
+						width: 100%;
+					}
+
+					.flex-box-image img {
+						max-width: 100%;
+						position: relative;
+						transform: translate(-18%, -12%);
+						z-index: 1;
+					}
+					
+					.flex-blue-green > .flex-box-copy > h1, .flex-blue-green > .flex-box-copy > h2,
+					.flex-blue-green > .flex-box-copy > p, .flex-blue-green > .flex-box-copy > .lead {
+						color: #fff;
+					}
+
+					@media (max-width: 1200px) {
+						.flex-box {
+							gap: 9rem
+						}
+
+						.flex-box-content,
+						.flex-box-image {
+							min-width: 100%;
+							text-align: center;
+						}
+						
+						.flex-box-image::before {
+							display: none;
+						}
+
+						.flex-box-image img {
+							max-width: 600px;
+							transform: translate(0, 0%);
+							width: 100%;
+						}
+					}
+				</style>
+				<script>
+					document.addEventListener("DOMContentLoaded", function() {
+						const flexBoxes = document.querySelectorAll('.flex-box');
+
+						const observer = new IntersectionObserver((entries, observer) => {
+							entries.forEach((entry, index) => {
+								if (entry.isIntersecting) {
+									setTimeout(() => {
+										entry.target.classList.add('lazy-loaded');
+										const content = entry.target.querySelector('.flex-box-content');
+										if (content) {
+											content.classList.add('lazy-loaded');
+										}
+									}, index * 600);
+									observer.unobserve(entry.target);
+								}
+							});
+						}, {
+							threshold: 0.1
+						});
+
+						flexBoxes.forEach(box => {
+							observer.observe(box);
+						});
+					});
+				</script>
+				<div class="flex-wrapper">
+					<div class="container flex-box">
+						<div class="flex-box-image">
+							<img src="assets/img/global/connect.jpg" alt="Capital Blue Store"
+								class="image-rich-text-with-image" loading="">
+						</div>
+						<div class="flex-box-content flex-lighter-grey">
+							<div class="flex-box-copy">
+								<h2>Capital Blue Cross Connect</h2>
+								<p class="lead">Learn more about our health and wellness centers.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat.</p>
+								<a href="#" class="btn btn-success">Start here</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer element -->
+	<footer>
+		<div class="progress-wrap">
+			<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+				<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+			</svg>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 information">
+					<h4>Information</h4>
+					<div class="row">
+						<div class="col-sm-3">
+							<p><a href="about.html">About Us</a></p>
+							<p><a href="plain.html">Careers</a></p>
+							<p><a href="plain.html">Code of Conduct</a></p>
+						</div>
+						<div class="col-sm-3">
+							<p><a href="plain.html">Developers</a></p>
+							<p><a href="plain.html">HIPAA</a></p>
+							<p><a href="plain.html">Legal</a></p>
+						</div>
+						<div class="col-sm-3">
+							<p><a href="plain.html">Machine readable directories</a></p>
+							<p><a href="plain.html">Nondiscrimination</a></p>
+							<p><a href="plain.html">Privacy</a></p>
+						</div>
+						<div class="col-sm-3">
+							<p><a href="plain.html">Sitemap</a></p>
+							<p><a href="plain.html">SMS terms of use</a></p>
+							<p><a href="plain.html">Web Accessibility</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 social">
+					<h4>Download our app</h4>
+					<a href="https://itunes.apple.com/nz/app/capital-blue/id690763566" target="_blank"
+						aria-label="Navigate to iPhone App"><em class="fa fa-apple"
+							aria-hidden="true"></em></a>
+					<a href="https://play.google.com/store/apps/details?id=com.capbluecross.membermobileapp"
+						target="_blank" aria-label="Navigate to Android App"><em
+							class="fa fa-android" aria-hidden="true"></em></a>
+					<h4>Follow us</h4>
+					<a href="https://www.facebook.com/Capbluecross/" target="_blank" aria-label="Navigate to Facebook"
+						><em class="fa fa-facebook" aria-hidden="true"></em></a>
+					<a href="https://twitter.com/capbluecross" target="_blank" alt="Twitter icon"
+						aria-label="Navigate to Twitter" class="dark-bg-anchor x"><svg
+							xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+							<style>
+								svg {
+									fill: #fff
+								}
+							</style>
+							<path
+								d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+							</path>
+						</svg></a>
+					<a href="https://www.youtube.com/user/capbluecross" target="_blank" aria-label="Navigate to YouTube"
+						><em class="fa fa-youtube" aria-hidden="true"></em></a>
+					<a href="https://www.pinterest.com/capbluecross/" target="_blank" aria-label="Navigate to Pinterest"
+						><em class="fa fa-pinterest" aria-hidden="true"></em></a>
+					<a href="https://www.linkedin.com/company-beta/21312/?pathWildcard=21312" target="_blank"
+						aria-label="Navigate to LinkedIn"><em class="fa fa-linkedin"
+							aria-hidden="true"></em></a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<p>Health care benefit programs issued or administered by Capital BlueCross and/or its subsidiaries,
+						Capital Advantage Insurance Company<sup>®</sup>, Capital Advantage Assurance Company<sup>®</sup>
+						and Keystone Health Plan<sup>®</sup> Central. Independent licensees of the BlueCross BlueShield
+						Association serving 21 counties in Central Pennsylvania and the Lehigh Valley. Communications
+						issued by Capital BlueCross in its capacity as administrator of programs and provider relations
+						for all companies.</p>
+					<p class="copyright">© 2024 Capital BlueCross All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

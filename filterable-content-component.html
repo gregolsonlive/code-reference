@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Base meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=0.80">
+
+	<!-- Descriptive meta -->
+	<title>Capital BlueCross</title>
+	<meta name="title" content="max 65 character title">
+	<meta name="description" content="max 165 character description">
+	<meta name="keywords" content="comma, separated, list">
+	<meta name="author" content="Capital BlueCross">
+
+	<!-- CDN loaded CSS assets, we are loading these from CDN for performance however assets can be loaded locally if desired -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+
+	<!-- CDN loaded JS assets -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+
+	<!-- These plugins are optional and should only be loaded where video/rotating image banners are used -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vide/0.5.1/jquery.vide.min.js"></script>
+	<script src="assets/js/jquery.bgswitcher.js"></script>
+
+	<!-- CBC specific assets -->
+	<link href="assets/css/app.css" rel="stylesheet"><!-- Global portal stying -->
+	<link href="assets/css/banners.css" rel="stylesheet"><!-- Page banners -->
+	<link href="assets/css/cbc-icons.css" rel="stylesheet"><!-- CBC sprite icon pack -->
+	<script src="assets/js/app.js"></script>
+</head>
+
+<body id="content" class="lotusui30dojo tundra claro locale_en toolbar-closed" style="padding-top: 167px;">
+	<header class="stFixedNavbar">
+		<!-- site toolbar -->
+		<div id="stBanner" class="">
+			<nav class="navbar navbar-default navbar-fixed-top" id="cbcnavdesign" data-swiftype-index="false">
+				<div class="alert-bar nobottompadding" style="background-color: #004e72">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="text-center">New two-step authentication will help protect your personal
+									information. Set yours up today. <a
+										href="https://www.capbluecross.com/UserSecurity/Login.xhtml" target="_blank"
+										aria-label="Go to the secure login page" class="dark-bg-anchor">Sign in</a> to
+									get started.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="top-header">
+					<div class="container" data-swiftype-index="false">
+						<div id="env_" class="envDisplay pull-left visible-md-block visible-lg-block"></div>
+						<div class="menu-block pull-left">
+							<ul>
+								<li><a href="/wps/portal/cap/members" class="btn btn-link">Shop</a></li>
+								<li><a href="/wps/portal/cap/employer" class="btn btn-link">Employers</a></li>
+								<li><a href="/wps/portal/cap/producer" class="btn btn-link">Producers</a></li>
+								<li><a href="/wps/portal/cap/provider" class="btn btn-link">Providers</a></li>
+							</ul>
+						</div>
+						<div class="menu-block pull-right">
+							<ul>
+								<li><a class="langLink btn btn-link" data-href="es.capbluecross.com"
+										href="//es.capbluecross.com" data-lang="es" mporgnav=""><em class="fa fa-globe"
+											aria-hidden="true"></em> Español</a></li>
+								<li id="login-li" class="dropdown">
+									<a href="https://www.capbluecross.com/UserSecurity/Login.xhtml"
+										class="btn btn-link"><em class="fa fa-lock" aria-hidden="true"></em> Login</a>
+									<span>|</span>
+									<div id="popup" class="popup" style="display: none;">
+										<div class="inner">
+											<div class="menu-block no-pad">
+												<ul style="list-style:none; margin-right: 10px">
+													<li><em class="fa fa-lock"
+															style="font-size:35px; padding-left:50%; color:#006f9e;"
+															aria-hidden="true"></em>
+														<div id="close" class="close">×</div>
+													</li>
+												</ul>
+											</div>
+											<ul
+												style="padding:0; list-style:none; text-align:center; margin-left:15px; margin-right:15px;">
+												<li style="font-size: 17px; padding-top:5px; display: inline-block;">Are
+													you a <br>Capital Blue Cross <br>customer?</li>
+												<br>
+												<li style="font-size:13px; padding-top:5px; display: inline-block;"><a
+														href="https://www.capbluecross.com/UserSecurity/Login.xhtml">Log
+														in</a> to your secure account for the best experience.</li>
+												<br>
+												<li style="font-size:10px; padding-top:5px; display: inline-block;">If
+													you don't have an account, set up takes just a few minutes. <a
+														href="https://www.capbluecross.com/UserSecurity/Registration/RegistrationStart.xhtml">Register</a>
+													today!</li>
+											</ul>
+										</div>
+									</div>
+									<a class="btn btn-link"
+										href="https://www.capbluecross.com/UserSecurity/Registration/RegistrationStart.xhtml">Register</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- top-secondary-navigation -->
+				<!-- not edit mode -->
+				<!-- top-nav -->
+				<div id="stMobileNavBackground" class="stMobileNavBackground"></div>
+				<div id="stNavContainer" class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#cbc_main_navigation" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="style-guide.html">
+							<img src="assets/img/global/capital-blue-cross-logo.png" alt="Capital Blue Cross">
+						</a>
+					</div>
+					<div class="collapse navbar-collapse cbcmobilenavbar" id="cbc_main_navigation">
+						<div class="pull-right">
+							<span class="uil uil-search"></span>
+						</div>
+						<ul class="nav navbar-nav pull-right">
+							<li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle"
+									data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+									tabindex="0">Our plans <span class="uil uil-angle-down"></span></a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="/wps/portal/cap/home/shop" tabindex="0"> <span
+												lang="en" dir="ltr">Find your plan</span></a>
+									</li>
+									<li><a class="dropdown-item" href="/wps/portal/cap/home/shop/individual"
+											tabindex="0"> <span lang="en" dir="ltr">Individual and family</span></a>
+									</li>
+									<li><a class="dropdown-item" href="/wps/portal/cap/home/shop/chip" tabindex="0">
+											<span lang="en" dir="ltr">CHIP</span></a></li>
+									<li><a class="dropdown-item" href="/wps/portal/cap/home/shop/medicare"
+											target="_blank" tabindex="0"> <span lang="en" dir="ltr">Medicare</span></a>
+									</li>
+									<li><a class="dropdown-item" href="/wps/portal/cap/home/shop/medicare-supplement"
+											tabindex="0"> <span lang="en" dir="ltr">Medicare Supplement</span></a></li>
+									<li><a class="dropdown-item" href="/wps/portal/cap/home/shop/employer-health-plan"
+											tabindex="0"> <span lang="en" dir="ltr">Employer health plans</span></a>
+									</li>
+									<li><a class="dropdown-item" href="/wps/portal/cap/home/shop/other" tabindex="0">
+											<span lang="en" dir="ltr">Travel and more</span></a></li>
+									<li><a class="dropdown-item" href="/wps/portal/cap/home/shop/student-plan"
+											tabindex="0"> <span lang="en" dir="ltr">Student health plan</span></a></li>
+								</ul>
+								<div></div>
+							</li>
+							<li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle"
+									data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+									tabindex="0">Your care <span class="uil uil-angle-down"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="/wps/portal/cap/home/find" tabindex="0"> <span lang="en"
+												dir="ltr"><!-- print out the page title -->Plan resources</span></a>
+									</li>
+									<li><a href="/wps/portal/cap/home/find/my-care-finder" tabindex="0"> <span lang="en"
+												dir="ltr">Doctors and facilities</span></a></li>
+									<li><a href="/wps/portal/cap/home/find/drug" tabindex="0"> <span lang="en"
+												dir="ltr">Prescription drugs</span></a></li>
+									<li><a href="/wps/portal/cap/home/find/id-card" target="_blank" tabindex="0"><span
+												lang="en" dir="ltr">ID card</span><em class="fa fa-lock iconleftMargin"
+												aria-hidden="true"> </em></a></li>
+									<li><a href="/wps/portal/cap/home/find/your-claims" target="_blank" tabindex="0">
+											<span lang="en" dir="ltr">Your claims</a></li>
+									<li><a href="/wps/portal/cap/home/find/your-benefits" target="_blank" tabindex="0">
+											<span lang="en" dir="ltr">Your benefits</span><em
+												class="fa fa-lock iconleftMargin" aria-hidden="true"> </em></a></li>
+								</ul>
+								<div></div>
+							</li>
+							<li class="dropdown">
+								<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"
+									role="button" aria-haspopup="true" aria-expanded="false" tabindex="0">Resources <span class="uil uil-angle-down"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="/wps/portal/cap/home/explore" tabindex="0"> <span lang="en"
+												dir="ltr"><!-- print out the page title -->Explore</span></a></li>
+									<li><a href="/wps/portal/cap/home/explore/form" tabindex="0"> <span lang="en"
+												dir="ltr">Forms</span></a></li>
+									<li><a href="/wps/portal/cap/home/explore/resource" tabindex="0"> <span lang="en"
+												dir="ltr"> Member resources</span></a></li>
+									<li><a href="/wps/portal/cap/home/explore/store" target="_blank" tabindex="0"> <span
+												lang="en" dir="ltr"> Capital Blue Cross Connect</span></a></li>
+								</ul>
+								<div></div>
+							</li>
+							<li class="dropdown"><a href="/wps/portal/cap/home/contact" tabindex="0">Contact us</a></li>
+						</ul>
+					</div>
+					<div class="stClear"></div>
+				</div>
+				<script>
+					$(document).ready(function () {
+						var height = $($("header #stBanner nav.navbar.navbar-default.navbar-fixed-top")[0]).height();
+						$("body#content").css("padding-top", height + "px");
+					});
+				</script>
+			</nav>
+		</div>
+	</header>
+	<!-- Begin main page content -->
+	<div class="component-control id-Z7_MAI21141L07100ANU76P7C0QU7">
+		<div class="ibmPortalControl stControl wpthemeControl a11yRegionTarget"
+			aria-labelledby="wpRegionIdZ7_MAI21141L07100ANU76P7C0QU7">
+			<div class="stControlBody stOverflowAuto wpthemeControlBody">
+				<style>
+					.breadcrumb-wrapper {
+
+					}
+					@media (max-width:1200px) {
+						.breadcrumb-wrapper.no-padding.smartphone {
+							/*margin-top:2em !important;*/
+						}
+						.breadcrumb-wrapper.no-padding.smartphone ol.breadcrumb {
+							padding-bottom: 8px;
+						}
+					}
+					.addtopmargin {
+						margin-top: 35px;
+					}
+					@media (max-width: 992px) {
+						.container.no-height {
+							width: 750px;
+						}
+					}
+				</style>
+				<div class="banner no-margin no-padding breadcrumb-wrapper " data-swiftype-index="false">
+					<div class="bread-wrap no-margin breadcrumb-wrapper" data-swiftype-index="false">
+						<div class="container no-height">
+							<div class="row">
+								<div class="col-sm-12">
+									<ol class="breadcrumb">
+										<li>You are here</li>
+										<li class="Capital Blue Cross"> <a href="#">Home</a></li>
+										<li class="Capital Blue Cross"> <a href="#">Explore</a></li>
+										<li class="Explore"> <a href="#">Member resources</a></li>
+										<li>Capital Journal</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container content">
+		<h1>Capital Journal</h1>
+		<hr class="h1-hr">
+		<p class="lead">Wellness resources to stay healthy.</p>
+		<div class="article-grid-filter">
+			<ul>
+				<li data-category="Benefits" tabindex="0">Benefits <span class="uil uil-file-medical"></span></li>
+				<li data-category="Chronic conditions" tabindex="0">Chronic conditions <span
+						class="uil uil-stethoscope"></span></li>
+				<li data-category="Health and wellness" tabindex="0">Health and wellness <span
+						class="uil uil-heart"></span></li>
+				<li data-category="Pregnancy" tabindex="0">Pregnancy <span class="uil uil-baby-carriage"></span></li>
+				<li data-category="Prevention" tabindex="0">Prevention <span class="uil uil-shield"></span></li>
+			</ul>
+		</div>
+		<div class="component-control id-Z7_MAI21141L0HF00QOH5RVRE7B25">
+			<!-- The Control element contains the portlet banner and the portlet content. -->
+			<div class="ibmPortalControl stControl wpthemeControl a11yRegionTarget"
+				aria-labelledby="wpRegionIdZ7_MAI21141L0HF00QOH5RVRE7B25">
+				<!-- The ControlBody element contains the portlet content. -->
+				<div class="stControlBody stOverflowAuto wpthemeControlBody">
+					<!-- The "lm:control" dynamic spot is used for the markup of a layout control. -->
+					<div class="default-component-spacing central-page-component" data-swiftype-name="body"
+						data-swiftype-type="text">
+						<style>
+							/* Article grid */
+							.article-grid-filter {
+								background-color: #fff;
+								color: #004e72;
+								font-size: 18px;
+								position: sticky;
+								z-index: 2;
+							}
+							.article-grid-filter ul {
+								display: flex;
+								justify-content: center;
+								list-style-type: none;
+								margin: 0;
+								padding: 0;
+							}
+							.article-grid-filter ul li {
+								cursor: pointer;
+								margin: 0;
+								padding: 15px 30px;
+								transition: all .3s ease-in-out;
+							}
+							.article-grid-filter ul li:hover {
+								background-color: #E8E8E8;
+							}
+							.article-grid-filter ul li span {
+								font-size: 24px;
+							}
+							.article-grid-filter-active {
+								background-color: #E8E8E8;
+							}
+							.article-grid {
+								display: grid;
+								grid-auto-flow: dense;
+								grid-auto-rows: 270px;
+								grid-gap: 45px;
+								grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+								margin: 0 0 45px;
+								overflow: hidden;
+								transition: opacity 0.3s ease-in-out;
+							}
+							.article-grid-col {
+								color: #222;
+								padding: 0;
+								position: relative;
+								opacity: 0;
+								overflow: hidden;
+								transform: translateY(51px);
+    							transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+								z-index: 1;
+							}
+							.article-grid-col.lazy-loaded {
+								opacity: 1;
+								transform: translateY(0);
+							}
+							.featured {
+								grid-column: span 3;
+								grid-row: span 2;
+							}
+							.featured .article-grid-image-container img, .horizontal .article-grid-image-container img {
+								width: 100%;
+							}
+							.featured .article-grid-col-content h2, .featured .article-grid-col-content h3 {
+								font-size: 24px;
+							}
+							.featured .article-grid-col-content p {
+								font-size: 21px;
+							}
+							.vertical{
+								grid-row: span 2;
+							}
+							.vertical .article-grid-image-container img {
+								max-width: 600px;
+							}
+							.horizontal{
+								grid-column: span 2;
+							}
+							.horizontal .article-grid-col-content h2, .horizontal .article-grid-col-content h3 {
+								font-size: 21px;
+							}
+							.horizontal .article-grid-col-content p {
+								font-size: 18px;
+							}
+							.article-grid-image-container {
+								overflow: hidden;
+							}
+							.article-grid-image-container a:hover::after,
+							.article-grid-image-container a:focus::after,
+							.article-grid-image-container a:active::after,
+							.article-grid-col-content a:hover::after,
+							.article-grid-col-content a:focus::after,
+							.article-grid-col-content a:active::after {
+								opacity: 0;
+							}
+							.article-grid-image-container img {
+								height: auto;
+								max-width: 100%;
+							}
+							.article-grid-col-content {
+								align-items: center;
+								background-color: rgba(255,255,255,0.9);
+								bottom: 0;
+								display: flex;
+								justify-content: space-between;
+								left: 0;
+								padding: 15px;
+								position: absolute;
+								right: 0;
+								z-index: 1;
+							}
+							.article-grid-col-content h2, .article-grid-col-content h3 {
+								font-size: 18px;
+								margin: 0;
+							}
+							.article-grid-col-content a {
+								color: #004e72;
+							}
+							.article-grid-col-detail {
+								padding: 0 0 0 1.2rem;
+							}
+							.article-grid-col-detail span {
+								color: #004e72;
+								font-size: 24px;
+							}
+
+							@media (max-width: 992px) {
+								.featured {
+									grid-column: span 2;
+								}
+							}
+							@media (max-width: 768px) {
+								.article-grid {
+									grid-auto-rows: 385px;
+									grid-template-columns: repeat(auto-fit, minmax(385px, 1fr));
+								}
+								.article-grid-col, .featured, .horizontal, .vertical {
+									grid-column: span 1;
+									grid-row: span 1;
+								}
+								.featured .article-grid-image-container img, 
+								.horizontal .article-grid-image-container img,
+								.vertical .article-grid-image-container img,
+								.article-grid-image-container img {
+									max-width: 100%;
+									width: 100%;
+								}
+								.article-grid-col-content {
+									background-color: rgba(255,255,255,1);
+									border: 1px solid #f1f5f7;
+								}
+								.featured .article-grid-col-content h2, 
+								.featured .article-grid-col-content h3,
+								.horizontal .article-grid-col-content h2, 
+								.horizontal .article-grid-col-content h3 {
+									font-size: 18px;
+								}
+								.featured .article-grid-col-content p,
+								.horizontal .article-grid-col-content p {
+									font-size: 15px;
+								}
+								.article-grid-col-detail {
+									margin: 6px 0 0;
+								}
+							}
+						</style>
+						<script>
+							/* Article Grid Filter */
+							// Initialize filter states
+							let selectedListItemCategory = null;
+							let selectedIconCategory = null;
+
+							// Function to apply filters
+							function applyFilters() {
+								const articleGrid = document.querySelector('.article-grid');
+								const articleGridCols = document.querySelectorAll('.article-grid-col');
+
+								// Hide the grid before applying filters
+								articleGrid.style.opacity = 0;
+
+								setTimeout(() => {
+									articleGridCols.forEach((col) => {
+										const colCategories = col.getAttribute('data-categories');
+										const shouldDisplay =
+											!selectedListItemCategory ||
+											(colCategories && colCategories.includes(selectedListItemCategory)) ||
+											(colCategories && colCategories.includes(selectedIconCategory));
+										col.style.display = shouldDisplay ? 'block' : 'none';
+									});
+
+									// Add/remove "active" class to list items
+									const listItems = document.querySelectorAll('.article-grid-filter li');
+									listItems.forEach((item) => {
+										const category = item.getAttribute('data-category');
+										if (category === selectedListItemCategory) {
+											item.classList.add('article-grid-filter-active');
+										} else {
+											item.classList.remove('article-grid-filter-active');
+										}
+									});
+
+									// Focus on the first visible article grid column
+									const firstVisibleCol = Array.from(articleGridCols).find((col) => col.style.display === 'block');
+									if (firstVisibleCol) {
+										firstVisibleCol.focus();
+
+										// Use jQuery to animate the scroll
+										$('html, body').animate({
+											scrollTop: $(firstVisibleCol).offset().top - $('.navbar-default').outerHeight() - 60
+										}, 550);
+									}
+
+									// Show the grid after applying filters
+									articleGrid.style.opacity = 1;
+								}, 600); // Match the transition duration
+							}
+
+							// Legend Filter (list items)
+							const listItems = document.querySelectorAll('.article-grid-filter li');
+							listItems.forEach((item) => {
+								item.addEventListener('click', () => {
+									const newCategory = item.getAttribute('data-category');
+									if (newCategory === selectedListItemCategory) {
+										// If same category is clicked again, remove the filter
+										selectedListItemCategory = null;
+									} else {
+										selectedListItemCategory = newCategory;
+									}
+									applyFilters();
+								});
+							});
+
+							/* Add lazy loading to grid items */
+							var observer;
+
+							function initializeObserver() {
+								const gridCols = document.querySelectorAll('.article-grid-col');
+
+								observer = new IntersectionObserver((entries, observer) => {
+									entries.forEach((entry, index) => {
+										if (entry.isIntersecting) {
+											setTimeout(() => {
+												entry.target.classList.add('lazy-loaded');
+											}, index * 90); // Adjust the delay as needed
+											observer.unobserve(entry.target);
+										}
+									});
+								}, {
+									threshold: 0.1
+								});
+
+								gridCols.forEach(col => {
+									observer.observe(col);
+								});
+							}
+
+							document.addEventListener("DOMContentLoaded", function() {
+								initializeObserver(); // Initialize observer on page load
+							});
+						</script>
+						<div class="article-grid">
+							<div class="article-grid-col featured" data-categories="Chronic conditions">
+								<div class="article-grid-item">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/adjusting-the-scale.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">Five things you should know about using GLP-1 drugs for weight
+												loss</a></h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Chronic conditions"
+													class="uil category-icon uil-stethoscope"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-grid-col horizontal" data-categories="Prevention">
+								<div class="article-grid-item">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/woman-smiling.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">Three steps to prevent cancer or find it early</a></h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Prevention"
+													class="uil category-icon uil-shield"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-grid-col vertical" data-categories="Prevention">
+								<div class="article-grid-item">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/man-smiling-with-doctor.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">Men’s Health: Prostate and colorectal cancer</a></h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Prevention"
+													class="uil category-icon uil-shield"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-grid-col" data-categories="Health and wellness">
+								<div class="article-grid-item">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/man-focusing.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">Mental wellness and heart health? Believe it or not, there’s a
+												link</a></h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Health and wellness"
+													class="uil category-icon uil-heart"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-grid-col" data-categories="Health and wellness,Prevention">
+								<div class="article-grid-item">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/woman-drinking.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">Alcohol awareness: Rethink your drink to lower your risk of
+												cancer</a></h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Health and wellness"
+													class="uil category-icon uil-heart"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-grid-col horizontal" data-categories="Chronic conditions,Prevention">
+								<div class="article-grid-item">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/man-holding-lower-back.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">Preventing and treating low back pain</a></h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Chronic conditions"
+													class="uil category-icon uil-stethoscope"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-grid-col vertical" data-categories="Benefits,Prevention">
+								<div class="article-grid-item">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/little-girl-smiling.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">Getting shots: Help your child have a better visit</a></h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Benefits"
+													class="uil category-icon uil-file-medical"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-grid-col" data-categories="Chronic conditions">
+								<div class="article-grid-item">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/woman-getting-eye-care.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">The diabetes and vision loss connection</a></h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Chronic conditions"
+													class="uil category-icon uil-stethoscope"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-grid-col" data-categories="Benefits,Prevention">
+								<div class="article-grid-item">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/child-raising-hand.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">Childhood immunizations</a></h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Benefits"
+													class="uil category-icon uil-file-medical"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-grid-col horizontal" data-categories="Prevention">
+								<div class="article-grid-item">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/man-running-in-park.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">Prevent type 2 diabetes</a></h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Prevention"
+													class="uil category-icon uil-shield"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-grid-col vertical" data-categories="Health and wellness,Prevention">
+								<div class="article-grid-item">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/holding-hands.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">STD awareness and testing is important for long-term health</a>
+										</h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Health and wellness"
+													class="uil category-icon uil-heart"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-grid-col" data-categories="Benefits">
+								<div class="article-grid-item">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/prescription-drugs.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">Help save future generations by using antibiotics mindfully</a>
+										</h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Benefits"
+													class="uil category-icon uil-file-medical"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-grid-col" data-categories="Health and wellness,Prevention">
+								<div class="article-grid-item">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/woman-with-umbrella.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">Safely enjoy fun in the sun</a></h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Health and wellness"
+													class="uil category-icon uil-heart"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-grid-col horizontal" data-categories="Prevention">
+								<div class="article-grid-item">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/woman-and-daughter.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">Stop cervical cancer before it starts</a></h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Prevention"
+													class="uil category-icon uil-shield"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-grid-col vertical" data-categories="Prevention">
+								<div class="article-grid-item">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/mother-and-daughter-on-couch.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">HPV and cervical cancer: Know the risks and how to protect
+												yourself</a></h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Prevention"
+													class="uil category-icon uil-shield"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-grid-col">
+								<div class="article-grid-item" data-categories="Prevention">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/woman-jogging-with-phone.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">Breast cancer risk factors</a></h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Prevention"
+													class="uil category-icon uil-shield"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-grid-col" data-categories="Pregnancy">
+								<div class="article-grid-item">
+									<div class="article-grid-image-container">
+										<a href="#"><img src="assets/img/global/woman-doctor-prenatal-care.jpg"></a>
+									</div>
+									<div class="article-grid-col-content">
+										<h2><a href="#">A healthy pregnancy starts before baby is on board</a></h2>
+										<div class="article-grid-col-detail">
+											<span data-category="Pregnancy"
+													class="uil category-icon uil-baby-carriage"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer element -->
+	<footer>
+		<div class="progress-wrap">
+			<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+				<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+			</svg>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 information">
+					<h4>Information</h4>
+					<div class="row">
+						<div class="col-sm-3">
+							<p><a href="about.html">About Us</a></p>
+							<p><a href="plain.html">Careers</a></p>
+							<p><a href="plain.html">Code of Conduct</a></p>
+						</div>
+						<div class="col-sm-3">
+							<p><a href="plain.html">Developers</a></p>
+							<p><a href="plain.html">HIPAA</a></p>
+							<p><a href="plain.html">Legal</a></p>
+						</div>
+						<div class="col-sm-3">
+							<p><a href="plain.html">Machine readable directories</a></p>
+							<p><a href="plain.html">Nondiscrimination</a></p>
+							<p><a href="plain.html">Privacy</a></p>
+						</div>
+						<div class="col-sm-3">
+							<p><a href="plain.html">Sitemap</a></p>
+							<p><a href="plain.html">SMS terms of use</a></p>
+							<p><a href="plain.html">Web Accessibility</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 social">
+					<h4>Download our app</h4>
+					<a href="https://itunes.apple.com/nz/app/capital-blue/id690763566" target="_blank"
+						aria-label="Navigate to iPhone App"><em class="fa fa-apple"
+							aria-hidden="true"></em></a>
+					<a href="https://play.google.com/store/apps/details?id=com.capbluecross.membermobileapp"
+						target="_blank" aria-label="Navigate to Android App"><em
+							class="fa fa-android" aria-hidden="true"></em></a>
+					<h4>Follow us</h4>
+					<a href="https://www.facebook.com/Capbluecross/" target="_blank" aria-label="Navigate to Facebook"
+						><em class="fa fa-facebook" aria-hidden="true"></em></a>
+					<a href="https://twitter.com/capbluecross" target="_blank" alt="Twitter icon"
+						aria-label="Navigate to Twitter" class="dark-bg-anchor x"><svg
+							xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+							<style>
+								svg {
+									fill: #fff
+								}
+							</style>
+							<path
+								d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+							</path>
+						</svg></a>
+					<a href="https://www.youtube.com/user/capbluecross" target="_blank" aria-label="Navigate to YouTube"
+						><em class="fa fa-youtube" aria-hidden="true"></em></a>
+					<a href="https://www.pinterest.com/capbluecross/" target="_blank" aria-label="Navigate to Pinterest"
+						><em class="fa fa-pinterest" aria-hidden="true"></em></a>
+					<a href="https://www.linkedin.com/company-beta/21312/?pathWildcard=21312" target="_blank"
+						aria-label="Navigate to LinkedIn"><em class="fa fa-linkedin"
+							aria-hidden="true"></em></a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<p>Health care benefit programs issued or administered by Capital BlueCross and/or its subsidiaries,
+						Capital Advantage Insurance Company<sup>®</sup>, Capital Advantage Assurance Company<sup>®</sup>
+						and Keystone Health Plan<sup>®</sup> Central. Independent licensees of the BlueCross BlueShield
+						Association serving 21 counties in Central Pennsylvania and the Lehigh Valley. Communications
+						issued by Capital BlueCross in its capacity as administrator of programs and provider relations
+						for all companies.</p>
+					<p class="copyright">© 2024 Capital BlueCross All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

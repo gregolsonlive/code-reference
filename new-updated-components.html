@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Base meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=0.80">
+
+	<!-- Descriptive meta -->
+	<title>Capital BlueCross</title>
+	<meta name="title" content="max 65 character title">
+	<meta name="description" content="max 165 character description">
+	<meta name="keywords" content="comma, separated, list">
+	<meta name="author" content="Capital BlueCross">
+
+	<!-- CDN loaded CSS assets, we are loading these from CDN for performance however assets can be loaded locally if desired -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+
+	<!-- CDN loaded JS assets -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+
+	<!-- These plugins are optional and should only be loaded where video/rotating image banners are used -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vide/0.5.1/jquery.vide.min.js"></script>
+	<script src="assets/js/jquery.bgswitcher.js"></script>
+
+	<!-- CBC specific assets -->
+	<link href="assets/css/app.css" rel="stylesheet"><!-- Global portal stying -->
+	<link href="assets/css/banners.css" rel="stylesheet"><!-- Page banners -->
+	<link href="assets/css/cbc-icons.css" rel="stylesheet"><!-- CBC sprite icon pack -->
+	<script src="assets/js/app.js"></script>
+</head>
+<body id="content" class="lotusui30dojo tundra claro locale_en toolbar-closed" style="padding-top: 60px;">
+	<div class="content">
+		<div class="container">
+			<h1>Components</h1>
+		</div>
+		<div class="container">
+			<section class="section-divider">
+				<h2>Icon grid</h2>
+				<p>(Adjusted styling and hover effects, increase max row count from 3 to 4, add option for border top color)
+				</p>
+			</section>
+		</div>
+		<div class="component-control id-Z7_MAI21141L0HF00QOH5RVRE7B25">
+			<!-- The Control element contains the portlet banner and the portlet content. -->
+			<div class="ibmPortalControl stControl wpthemeControl a11yRegionTarget"
+				aria-labelledby="wpRegionIdZ7_MAI21141L0HF00QOH5RVRE7B25">
+				<!-- The ControlBody element contains the portlet content. -->
+				<div class="stControlBody stOverflowAuto wpthemeControlBody">
+					<!-- The "lm:control" dynamic spot is used for the markup of a layout control. -->
+					<style>
+						.icon-grid {
+							display: flex;
+							flex-wrap: wrap;
+							gap: 4.5rem;
+							justify-content: center;
+							--stagger-delay: 150ms;
+						}
+	
+						.icon-grid-col {
+							background-color: #fff;
+							box-shadow: 0px 0px 21px 3px rgb(0, 0, 0, 6%);
+							color: #222;
+							flex: 1;
+							max-width: 345px;
+							min-width: 345px;
+							opacity: 0;
+							position: relative;
+							top: 0;
+							transform: translateY(51px);
+							transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out, top cubic-bezier(0.24, 0.15, 0.24, 1) 0.21s;
+						}
+	
+						.icon-grid-col.lazy-loaded {
+							opacity: 1;
+							transform: translateX(0);
+						}
+	
+						.icon-grid-col:hover {
+							top: -9px;
+						}
+	
+						.icon-grid-col>a {
+							line-height: 0;
+							font-size: 0;
+							color: transparent;
+							z-index: 2;
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							left: 0;
+							right: 0;
+						}
+	
+						.icon-grid-col img {
+							margin: 60px 0 27px;
+							max-height: 90px;
+							max-width: 100%;
+						}
+	
+						.icon-grid-col-content {
+							padding: 15px 45px 30px;
+						}
+					</style>
+					<script>
+						document.addEventListener("DOMContentLoaded", function() {
+							const gridCols = document.querySelectorAll('.icon-grid-col');
+	
+							const observer = new IntersectionObserver((entries, observer) => {
+								entries.forEach((entry, index) => {
+									if (entry.isIntersecting) {
+										setTimeout(() => {
+											entry.target.classList.add('lazy-loaded');
+										}, index * 90);
+										observer.unobserve(entry.target);
+									}
+								});
+							}, {
+								threshold: 0.1
+							});
+	
+							gridCols.forEach(col => {
+								observer.observe(col);
+							});
+						});
+					</script>
+					<div class="default-component-spacing central-page-component" data-swiftype-name="body"
+						data-swiftype-type="text">
+						<div class="icon-grid text-center">
+							<div class="icon-grid-col" style="border-top: 12px solid #FF8400;">
+								<a href="#" target="_self" aria-label="Shop for plans">Find
+									your plan</a>
+								<img src="assets/img/global/apple-tt.png">
+								<div class="icon-grid-col-content">
+									<h3>Control your health</h3>
+									<p dir="ltr">Eat healthy and track your progress.</p>
+								</div>
+							</div>
+							<div class="icon-grid-col" style="border-top: 12px solid #76BD22;">
+								<a href="#" target="_blank" aria-label="Find a doctor">Doctors SSO</a>
+								<img src="assets/img/global/heart-tt.png">
+								<div class="icon-grid-col-content">
+									<h3>Find a doctor</h3>
+									<p dir="ltr">Search for a provider for you and your family.<span
+											class="external-link"><a target="_blank" title=""
+												href="/wps/portal/cap/about/disclaimer/"
+												class="external-link-icon fa fa-external-link"
+												aria-label="External link disclaimer"></a></span></p>
+								</div>
+							</div>
+							<div class="icon-grid-col" style="border-top: 12px solid #FFC72A;">
+								<a href="#" target="_self" aria-label="Explore your health">Explore</a>
+								<img src="assets/img/global/chat-head-tt.png">
+								<div class="icon-grid-col-content">
+									<h3>Chat with experts</h3>
+									<p dir="ltr">Take a class or learn how to manage your health.</p>
+								</div>
+							</div>
+							<div class="icon-grid-col" style="border-top: 12px solid #004e72;">
+								<a href="#" target="_self" aria-label="Employer group plans">Shop for group
+									plans</a>
+								<img src="assets/img/global/document-tt.png">
+								<div class="icon-grid-col-content">
+									<h3>Manage your plan</h3>
+									<p>A portfolio of plans for organizations of every size.</p>
+								</div>
+							</div>
+							<div class="icon-grid-col">
+								<a href="#" target="_self" aria-label="Shop for plans">Find your plan</a>
+								<img src="assets/img/global/member_perks.jpg">
+								<div class="icon-grid-col-content">
+									<h3>Shop for plans</h3>
+									<p dir="ltr">Compare the benefits and costs of plans.</p>
+								</div>
+							</div>
+							<div class="icon-grid-col">
+								<a href="#" target="_blank" aria-label="Find a doctor">Doctors SSO</a>
+								<img src="assets/img/global/find_a_doctor.jpg">
+								<div class="icon-grid-col-content">
+									<h3>Find a doctor</h3>
+									<p dir="ltr">Search for a provider for you and your family.<span
+											class="external-link"><a target="_blank" title=""
+												href="/wps/portal/cap/about/disclaimer/"
+												class="external-link-icon fa fa-external-link"
+												aria-label="External link disclaimer"></a></span></p>
+								</div>
+							</div>
+							<div class="icon-grid-col">
+								<a href="#" target="_self" aria-label="Explore your health">Explore</a>
+								<img src="assets/img/global/discover.jpg">
+								<div class="icon-grid-col-content">
+									<h3>Explore your health</h3>
+									<p dir="ltr">Take a class or learn how to manage your health.</p>
+								</div>
+							</div>
+							<div class="icon-grid-col">
+								<a href="#" target="_self" aria-label="Employer group plans">Shop for group
+									plans</a>
+								<img src="assets/img/global/medicare.jpg">
+								<div class="icon-grid-col-content">
+									<h3>Employer group plans</h3>
+									<p>A portfolio of plans for organizations of every size.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<section class="section-divider">
+				<h2>Image Grid</h2>
+				<p>(Adjusted styling and hover efects)</p>
+			</section>
+		</div>
+		<div class="component-control id-Z7_MAI21141LGVF00Q73I65DO2QH1">
+			<div class="ibmPortalControl stControl wpthemeControl a11yRegionTarget"
+				aria-labelledby="wpRegionIdZ7_MAI21141LGVF00Q73I65DO2QH1">
+				<!-- The ControlBody element contains the portlet content. -->
+				<div class="stControlBody stOverflowAuto wpthemeControlBody">
+					<!-- The "lm:control" dynamic spot is used for the markup of a layout control. -->
+					<style>
+						.image-grid {
+							display: flex;
+							flex-wrap: wrap;
+							gap: 4.5rem;
+							justify-content: center;
+						}
+
+						.image-grid-col {
+							background-color: #fff;
+							box-shadow: 0px 0px 21px 3px rgb(0, 0, 0, 6%);
+							color: #222;
+							flex: 1;
+							max-width: 478px;
+							min-width: 478px;
+							opacity: 0;
+							position: relative;
+							transform: translateY(51px);
+							transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+						}
+	
+						.image-grid-col.lazy-loaded {
+							opacity: 1;
+							transform: translateX(0);
+						}
+
+						.image-grid-col:hover .image-grid-image-container img {
+							transform: scale(1.05);
+						}
+
+						.image-grid-col>a {
+							line-height: 0;
+							font-size: 0;
+							color: transparent;
+							z-index: 2;
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							left: 0;
+							right: 0;
+						}
+
+						.image-grid-image-container {
+							overflow: hidden;
+						}
+
+						.image-grid-image-container img {
+							max-width: 100%;
+							height: auto;
+							transition: transform 0.6s ease;
+						}
+
+						.image-grid-col-content {
+							padding: 15px 45px;
+						}
+
+						div.image-grid-col.cbc-hide-text>a {
+							text-indent: 100%;
+							white-space: nowrap;
+							overflow: hidden;
+						}
+
+						.raised-links a {
+							z-index: 3;
+							position: relative;
+						}
+
+						@media (max-width: 768px) {
+							.image-grid-col {
+								max-width: 100%;
+								min-width: 100%;
+							}
+						}
+					</style>
+					<script>
+						document.addEventListener("DOMContentLoaded", function() {
+							const gridCols = document.querySelectorAll('.image-grid-col');
+	
+							const observer = new IntersectionObserver((entries, observer) => {
+								entries.forEach((entry, index) => {
+									if (entry.isIntersecting) {
+										setTimeout(() => {
+											entry.target.classList.add('lazy-loaded');
+										}, index * 90);
+										observer.unobserve(entry.target);
+									}
+								});
+							}, {
+								threshold: 0.1
+							});
+	
+							gridCols.forEach(col => {
+								observer.observe(col);
+							});
+						});
+					</script>
+					<div class="default-component-spacing central-page-component" data-swiftype-name="body"
+						data-swiftype-type="text">
+						<div class="image-grid">
+							<div class="image-grid-col">
+								<a href="#" target="_self">Know your screenings</a>
+								<div class="image-grid-image-container">
+									<img src="assets/img/global/del-water-gap.jpg" loading="" class="">
+								</div>
+								<div class="image-grid-col-content">
+									<h3>Three steps to prevent cancer or find it early</h3>
+									<p>Cancer doesn’t wait and neither should you.</p>
+								</div>
+							</div>
+							<div class="image-grid-col">
+								<a href="#" target="_self">Should I be screened?</a>
+								<div class="image-grid-image-container">
+									<img src="assets/img/global/grocery-store.jpg" loading="" class="">
+								</div>
+								<div class="image-grid-col-content">
+									<h3>Prostate and colorectal cancer</h3>
+									<p>Talk to your doctor to learn more about the risks.</p>
+								</div>
+							</div>
+							<div class="image-grid-col">
+								<a href="#" target="_self">Learn about the connection</a>
+								<div class="image-grid-image-container">
+									<img src="assets/img/global/buisness-man-smiling-600x600.jpg" loading="" class="">
+								</div>
+								<div class="image-grid-col-content">
+									<h3>Mental wellness and heart health?</h3>
+									<p>Get more insight into the brain-heart connection.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<section class="section-divider">
+				<h2>Tabs with image</h2>
+				<p>(Adjusted styling)</p>
+			</section>
+		</div>
+		<div class="component-control id-Z7_MAI21141L0G4206CUKFD1B14H5">
+			<!-- The Control element contains the portlet banner and the portlet content. -->
+			<div class="ibmPortalControl stControl wpthemeControl a11yRegionTarget"
+				aria-labelledby="wpRegionIdZ7_MAI21141L0G4206CUKFD1B14H5">
+				<!-- The ControlBody element contains the portlet content. -->
+				<div class="stControlBody stOverflowAuto wpthemeControlBody">
+					<!-- The "lm:control" dynamic spot is used for the markup of a layout control. -->
+					<script>
+						$(document).ready(function () {
+							if ($('#Tabs-with-image').parents('.st-col-c-8-of-12').length != 0) {
+								$('#Tabs-with-image').addClass('rightmenutext');
+							}
+							var targetTabGroup = getUrlParameter("targetTabGroup");
+							var targetTab = getUrlParameter("targetTab");
+							if (targetTabGroup === "Tabs-with-image") {
+								if (typeof targetTab !== 'undefined') {
+									activateTab(targetTabGroup, targetTab);
+								}
+							}
+							function getUrlParameter(sParam) {
+								var sPageURL = window.location.search.substring(1),
+									sURLVariables = sPageURL.split('&'),
+									sParameterName,
+									i;
+								for (i = 0; i < sURLVariables.length; i++) {
+									sParameterName = sURLVariables[i].split('=');
+									if (sParameterName[0] === sParam) {
+										return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+									}
+								}
+							}
+							function activateTab(targetTabGroup, targetTab) {
+								console.log("targetTabGroup: ", targetTabGroup);
+								console.log("targetTab: ", targetTab);
+								$("#tabs-" + targetTabGroup + " li.active").removeClass("active");
+								$("#tabs-" + targetTabGroup + " li#" + "tab-parent-" + targetTab + "-" + targetTabGroup).addClass("active");
+								$("#tabContent-" + targetTabGroup + " div.active").removeClass("active");
+								$("#tabContent-" + targetTabGroup + " div.show").removeClass("show");
+								$("#tabContent-" + targetTabGroup + " div#" + targetTabGroup + "_menu_" + targetTab).addClass("active");
+								$("#tabContent-" + targetTabGroup + " div#" + targetTabGroup + "_menu_" + targetTab).addClass("in");
+							}
+						});
+					</script>
+					<div class="tall tab-cmpnt default-component-spacing container" id="Tabs-with-image">
+						<div class="row">
+							<div class="col-md-12" id="standard-text-div">
+								<ul class="nav nav-tabs" id="tabs-Tabs-with-image" role="tablist">
+									<li id="tab-parent-1-Tabs-with-image" class="navitem active" role="tab">
+										<a id="tab-1-Tabs-with-image" class="nav-link" data-toggle="tab"
+											href="#Tabs-with-image_menu_1" aria-selected="true"
+											aria-controls="Tabs-with-image_menu_1">
+											Filing a claim
+										</a>
+									</li>
+									<li id="tab-parent-2-Tabs-with-image" class="navitem" role="tab">
+										<a id="tab-2-Tabs-with-image" class="nav-link" data-toggle="tab"
+											href="#Tabs-with-image_menu_2" aria-selected="false"
+											aria-controls="Tabs-with-image_menu_2">
+											Out-of-area claims
+										</a>
+									</li>
+									<li id="tab-parent-3-Tabs-with-image" class="navitem" role="tab">
+										<a id="tab-3-Tabs-with-image" class="nav-link" data-toggle="tab"
+											href="#Tabs-with-image_menu_3" aria-selected="false"
+											aria-controls="Tabs-with-image_menu_3">
+											Prescription drug claims
+										</a>
+									</li>
+									<li id="tab-parent-4-Tabs-with-image" class="navitem" role="tab">
+										<a id="tab-4-Tabs-with-image" class="nav-link" data-toggle="tab"
+											href="#Tabs-with-image_menu_4" aria-selected="false"
+											aria-controls="Tabs-with-image_menu_4">
+											Special services
+										</a>
+									</li>
+								</ul>
+								<div class="tab-content" id="tabContent-Tabs-with-image">
+									<div id="Tabs-with-image_menu_1" class="tab-pane fade in active" role="tabpanel"
+										aria-labelledby="tab-1-Tabs-with-image">
+										<h2>Filing a medical claim</h2>
+										<p>In-network providers file claim forms for members.</p>
+										<p>Out-of-network providers may or may not file claim forms for members. In many
+											cases, members will need to file their own claim forms to be reimbursed for
+											eligible services performed by out-of-network providers.</p>
+										<p>Send medical program claim forms (including for HMO claims) to:</p>
+										<p><span style="display: block;">Medical Claims Processing</span><span
+												style="display: block;">PO Box 211457</span><span
+												style="display: block;">Eagan, MN 55121-3057</span></p>
+										<p>Members with claims questions may call the number on the back of their ID
+											card (TTY: 711).</p>
+										<p><strong>Claim form tips:</strong></p>
+										<ul>
+											<li>File claims promptly. While members can submit claims up to 12 months
+												from the date of service, it is best to submit claims soon after a
+												service.</li>
+											<li>Complete all information on the claim form.</li>
+											<li>Complete a separate claim form for each family member who receives
+												medical services.</li>
+											<li>Attach all itemized bills for the services received by the individual
+												family member to the claim form. (A separate claim form is not needed
+												for each bill.)</li>
+											<li>Attach all EOB forms showing prior payment (for example, from Medicare
+												or other insurance carriers) for bills being submitted to the claim
+												form. (See the &ldquo;<a title="" href="#otherPartLiability"
+													target="_self" aria-label="Go to Other part liability section">Other
+													party liability</a>&rdquo; part of this section for more information
+												about individuals having more than one applicable coverage.)</li>
+										</ul>
+									</div>
+									<div id="Tabs-with-image_menu_2" class="tab-pane fade" role="tabpanel"
+										aria-labelledby="tab-2-Tabs-with-image">
+										<h2>Claims for out-of-area and traveling employees</h2>
+										<p>Some businesses have employees who live and work outside the central
+											Pennsylvania and Lehigh Valley geographic areas. In addition, members
+											traveling outside our 21-county service area may need medical services.</p>
+										<p>While we do require a company to be headquartered in this area and have an
+											employee base here, coverage is available to our members wherever they are.
+										</p>
+										<p>Here&rsquo;s an overview of how claims work for employees who live outside of
+											our service area or who are traveling outside of our service area.</p>
+										<h3>The BlueCard<sup>&reg;</sup> program</h3>
+										<p>The BlueCard program enables your out-of-area employees to access in-network
+											providers using all Blue plans. Within the BlueCard program, claims
+											processing is an integrated system among all the Blue plans.</p>
+										<p>Call <a href="tel:8008102583"
+												aria-label="Call to locate an in-network provider">800.810.BLUE</a> (<a
+												href="tel:8008102583"
+												aria-label="Call to locate an in-network provider">800.810.2583</a>) to
+											locate an in-network provider or visit the <a
+												href="http://provider.bcbs.com/" target="_blank" class="external-link"
+												rel="noopener">BCBS National Doctor and Hospital Finder online</a>.</p>
+										<h4>BlueCard overview</h4>
+										<ul>
+											<li>BlueCard allows our members to receive the same benefits regardless of
+												where they receive services. Their benefit program goes wherever they
+												go.</li>
+											<li>A Capital member may receive covered services at the in-network rate
+												from a facility or professional provider outside our service area if the
+												provider is a member provider with the local Blue plan. The member only
+												needs to show their ID card and pay any applicable out-of-pocket
+												amounts.</li>
+											<li>The ID card information allows the provider to file the claim correctly.
+												The provider files the claim with the local Blue plan, which
+												electronically routes the information to us for processing.</li>
+											<li>We respond to the initiating local Blue plan after applying your
+												group&rsquo;s applicable benefits and the local Blue plan pays its
+												network provider for the covered service.</li>
+											<li>HMO members must reside within Capital&rsquo;s service area. The
+												BlueCard program applies for urgent and emergent care only. Nonemergency
+												(or routine) care must be coordinated by the HMO member&rsquo;s PCP.
+											</li>
+										</ul>
+										<h3>Services from out-of-network providers</h3>
+										<p>In certain situations, it might not be possible to reach a BlueCard
+											in-network provider. Your out-of-area resident employee might also choose to
+											receive services from an out-of-network provider.</p>
+										<p>In addition, HMO members do not have coverage for services from an
+											out-of-network provider.</p>
+										<p>Members may be required to submit a claim for the services received from an
+											out-of-network provider. Find claim forms on our <a
+												href="/wps/myportal/cap/home/explore/form">Employer Forms</a>&nbsp;page.
+										</p>
+										<h3>International travel</h3>
+										<p>Blue Cross Blue Shield Global<sup>&reg;</sup> Core provides our members with
+											access to network healthcare services around the world. Members traveling or
+											residing outside the United States have access to doctors and hospitals in
+											more than 200 countries.</p>
+										<p>HMO members must reside within our service area or participate in the Away
+											From Home Care&mdash;Guest Membership Program. HMO members may use Blue
+											Cross Blue Shield Global Core for urgent or emergent care only.</p>
+										<p>How to locate providers outside the U.S.:</p>
+										<ul>
+											<li>Phone: <a href="tel:8008102583"
+													aria-label="Call to locate an in-network provider">800.810.BLUE</a>
+												(<a href="tel:8008102583"
+													aria-label="Call to locate an in-network provider">800.810.2583</a>),
+												24/7</li>
+											<li>Web: Visit <a href="http://www.bcbsglobalcore.com/" target="_blank"
+													clas="external-link" aria-label="Go to the BCBS Global Core website"
+													rel="noopener">Global Core</a>, accept the &ldquo;Terms &amp;
+												Conditions,&rdquo; enter your three-digit ID card prefix, and log in.
+											</li>
+										</ul>
+										<p>Tips for members who may require international services:</p>
+										<ul>
+											<li>Members should carry their ID card when traveling.</li>
+											<li>For emergency care, members should go to the nearest hospital and call
+												the Blue Cross Blue Shield Global Core Service Center at <a
+													href="tel:8008102583"
+													aria-label="Call to locate an in-network provider">800.810.BLUE</a>
+												(<a href="tel:8008102583"
+													aria-label="Call to locate an in-network provider">800.810.2583</a>)
+												or call collect at <a href="tel:8046731177"
+													aria-label="Call collect to locate an in-network provider">804.673.1177</a>,
+												24/7, if admitted.</li>
+											<li>For nonemergency care, members should call <a href="tel:8008102583"
+													aria-label="Call to locate an in-network provider">800.810.BLUE</a>
+												(<a href="tel:8008102583"
+													aria-label="Call to locate an in-network provider">800.810.2583</a>).
+												A medical coordinator, in conjunction with a medical professional, will
+												assist the member in finding appropriate care. The Blue Cross Blue
+												Shield Global Core Service Center is staffed with multilingual
+												representatives and is available 24/7. HMO members should only call Blue
+												Cross Blue Shield Global Core for urgent or emergent care. Nonemergency
+												(or routine) care must be coordinated by the HMO member&rsquo;s PCP.
+											</li>
+											<li>If preauthorization is required, members should call us at <a
+													href="tel:8004712242"
+													aria-label="Call to locate an in-network provider if preauthorized">800.471.2242</a>.
+											</li>
+										</ul>
+									</div>
+									<div id="Tabs-with-image_menu_3" class="tab-pane fade" role="tabpanel"
+										aria-labelledby="tab-3-Tabs-with-image">
+										<h2>Prescription drug claims</h2>
+										<p>Capital Blue Cross&rsquo; prescription drug benefits are administered by
+											Prime Therapeutics<sup><a title="" href="#disclaimer-1" target="_self"
+													aria-label="go to disclaimer 1">1</a></sup>, one of the largest
+											pharmacy benefit managers (PBMs) in the nation.</p>
+										<p>Our prescription drug benefit typically has three primary components:</p>
+										<ul>
+											<li>Retail service.</li>
+											<li>Home delivery.</li>
+											<li>Specialty drugs through Accredo Health Group, Inc.<sup><a title=""
+														href="#disclaimer-2" target="_self"
+														aria-label="go to disclaimer 2">2</a></sup></li>
+										</ul>
+										<p>Prescription drug benefits also may have copayment, coinsurance, deductible,
+											and/or ancillary charge requirements for prescription drugs. Cost-sharing
+											amounts may differ depending on whether the dispensed drug is part of one of
+											these tiers:</p>
+										<ul>
+											<li><strong>Generic preferred (GP) and generic nonpreferred (GNP)</strong>
+												&ndash; Includes drugs that contain the same active ingredient(s) as
+												their corresponding brand name drug and have been approved by the Food
+												and Drug Administration (FDA) for therapeutic equivalency to their brand
+												name product. Note that not all strengths and formulations of generic
+												drugs have the same tier status.</li>
+											<li><strong>Brand preferred (BP)</strong> &ndash; Includes drugs reviewed by
+												our Pharmacy and Therapeutics Committee and found to have therapeutic
+												advantage or overall value over nonpreferred brands, factoring safety,
+												effectiveness, and cost.</li>
+											<li><strong>Brand nonpreferred (BNP)</strong> &ndash; Includes drugs
+												reviewed by our Pharmacy and Therapeutics Committee and found not to
+												have significant therapeutic advantage or overall value over alternative
+												generics, preferred brands, or over-the-counter drugs.</li>
+										</ul>
+										<p><strong>Note</strong>: Not all plans include a two-tier generic benefit with
+											a different copayment/coinsurance for each generic tier. For plans that do
+											not have a two-tier generic benefit, the generic copayment/coinsurance will
+											be applied to both generic preferred and generic nonpreferred drugs.</p>
+									</div>
+									<div id="Tabs-with-image_menu_4" class="tab-pane fade" role="tabpanel"
+										aria-labelledby="tab-4-Tabs-with-image">
+										<h2>Services requiring special information</h2>
+										<p>Certain types of services may require additional information on the
+											provider&rsquo;s bill. In most cases, providers are aware of the types of
+											information needed to process insurance claims, and the information they
+											provide to the member will contain the appropriate information.</p>
+										<p>Here&rsquo;s an overview of specific information that must be included on
+											bills for certain services:</p>
+										<table class="bordered-striped table-mobile" dir="ltr">
+											<thead>
+												<tr>
+													<td class="width-50">
+														<h4>Service received</h4>
+													</td>
+													<td class="width-50">
+														<h4>Information needed</h4>
+													</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="width-50" data-label="Service received">
+														<p>Surgery (for example, appendectomy, cholecystectomy,
+															hysterectomy)</p>
+													</td>
+													<td class="width-50" data-label="Information needed">
+														<p>Specific type of surgery.</p>
+													</td>
+												</tr>
+												<tr>
+													<td class="width-50" data-label="Service received">
+														<p>Anesthesia</p>
+													</td>
+													<td class="width-50" data-label="Information needed">
+														<p>The length of time the patient was under anesthesia and the
+															specific type of surgery for which the anesthesia was given.
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td class="width-50" data-label="Service received">
+														<p>Home healthcare</p>
+													</td>
+													<td class="width-50" data-label="Information needed">
+														<p>The type of service (for example, physical medicine,
+															occupational therapy, speech language pathology, skilled
+															nursing, home health aide) and date(s) of service.</p>
+													</td>
+												</tr>
+												<tr>
+													<td class="width-50" data-label="Service received">
+														<p>Blood</p>
+													</td>
+													<td class="width-50" data-label="Information needed">
+														<p>The number of pints received, the charge for each pint
+															received, and the number of pints replaced by donor(s).</p>
+													</td>
+												</tr>
+												<tr>
+													<td class="width-50" data-label="Service received">
+														<p>Chemotherapy</p>
+													</td>
+													<td class="width-50" data-label="Information needed">
+														<p>The name of the drug, its dosage, the charge for each drug,
+															and the method of administration (for example, oral,
+															intramuscular injection, intravenous).</p>
+													</td>
+												</tr>
+												<tr>
+													<td class="width-50" data-label="Service received">
+														<p>Home medical equipment</p>
+													</td>
+													<td class="width-50" data-label="Information needed">
+														<p>A certification from the prescribing provider indicating
+															medical necessity and the expected length of time the
+															equipment will be needed. If the bill is for rental
+															equipment, the purchase price of the equipment must be
+															included.</p>
+													</td>
+												</tr>
+												<tr>
+													<td class="width-50" data-label="Service received">
+														<p>Ambulance information</p>
+													</td>
+													<td class="width-50" data-label="Information needed">
+														<p>The point of origin and destination (for example, from
+															hospital to skilled nursing facility). If mileage is
+															charged, the number of miles must be included.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<style>
+									.tab-content {
+										display: grid;
+									}
+								</style>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<section class="section-divider">
+				<h2>Collapsibles</h2>
+				<p>(Adjusted styling)</p>
+			</section>
+		</div>
+		<div>
+			<div class="id-Z7_MAI21141LO6AF06MS1E6OQM5V3">
+				<!-- The Control element contains the portlet banner and the portlet content. -->
+				<div class="ibmPortalControl stControl wpthemeControl a11yRegionTarget"
+					aria-labelledby="wpRegionIdZ7_MAI21141LO6AF06MS1E6OQM5V3">
+					<!-- The ControlHeader element is the banner which contains the portlet title and menu -->
+					<div class="stControlHeader wpthemeControlHeader" data-swiftype-index="false">
+						<!-- A FocusableLink shows or hides the ControlHeader when the link receives a "focus" or "blur" event. This -->
+						<!-- element's event handlers are added by JavaScript in the st_skin module when the page is in "Edit" mode. -->
+						<!-- This link corresponds to the entire ControlHeader element. -->
+					</div>
+					<!-- The ControlBody element contains the portlet content. -->
+					<div class="stControlBody stOverflowAuto wpthemeControlBody">
+						<!-- The "lm:control" dynamic spot is used for the markup of a layout control. -->
+						<script>
+							$(document).ready(function () {
+								var isopenonload = $("#collapse-Collapsible-with-image_1-WR-Z6_MAI21141L07100ANU76P7C0QE8").hasClass('in');
+								if (isopenonload) {
+									$("#div-Collapsible-with-image_4-WR").parent().addClass('default-component-spacing');
+								}
+								$("#div-Collapsible-with-image_4-WR.panel-heading").click(function () {
+									$(this.nextElementSibling).slideToggle();
+									$("#spn-Collapsible-with-image_4-WR").toggleClass("uil-plus uil-plus-45");
+									var isVisible = $("#div-Collapsible-with-image_4-WR").parent().hasClass('default-component-spacing');
+									if (isVisible) {
+										$("#div-Collapsible-with-image_4-WR").parent().removeClass('default-component-spacing');
+										$("#collapse-Collapsible-with-image_1-WR-Z6_MAI21141L07100ANU76P7C0QE8").removeClass('in');
+									} else {
+										$("#div-Collapsible-with-image_4-WR").parent().addClass('default-component-spacing');
+									}
+								});
+							});
+						</script>
+						<style>
+							.collapseicon {
+								float: right;
+								color: #0087c0;
+							}
+						</style>
+						<div class="central-page-component akordian-main-div akordian-Collapsible-with-image_1-WR"
+							id="Collapsible-with-image_1-WR-Z6_MAI21141L07100ANU76P7C0QE8">
+							<div class="container">
+								<div class="colapsebody">
+									<div class="panel-group" id="accordian-Collapsible-with-image_1-WR">
+										<div class="panel panel-default">
+											<div class="panel-heading Collapsible-with-image_1-WR-Z6_MAI21141L07100ANU76P7C0QE8 collapsing-panel "
+												id="div-Collapsible-with-image_4-WR">
+												<h4 class="panel-title" data-swiftype-index="true">
+													<span>
+														<span class="collapseicon uil uil-plus"
+															id="spn-Collapsible-with-image_4-WR"></span>
+														<div>Complete the member health equity questionnaire
+														</div>
+													</span>
+												</h4>
+											</div>
+											<div class="panel-collapse collapse akordian-css "
+												id="collapse-Collapsible-with-image_1-WR-Z6_MAI21141L07100ANU76P7C0QE8">
+												<div class="panel-body">
+													<div class="mid-section-rich-text-with-image  mid-section-ul"
+														id="main_content">
+														<p>Your answers to the <a
+																href="https://www.capbluecross.com/HEQuestionnaire"
+																target="_blank" rel="noopener">health equity
+																questionnaire</a>&nbsp;will help us record your
+															cultural and linguistic needs, share those
+															preferences with your providers, develop more
+															inclusive programs and services, educate our
+															workforce, and more respectfully engage with the
+															people and communities we serve.</p>
+														<p>As a reminder, your privacy is important to us. This
+															optional, secure questionnaire and the information
+															you provide will be protected through our
+															established and tested <a
+																href="/wps/myportal/cap/about/notices">privacy</a>
+															and <a href="/wps/myportal/cap/about/site-privacy">digital
+																security</a> policies. This information will not
+															be used to make any decisions about coverage or
+															services. Come back anytime to make updates.</p>
+														<p>If you have any questions or need help with language
+															assistance, please call the number on the back of
+															your ID card.</p>
+														<p>Note, if you have dependents who are under the age of
+															18 or you are a CHIP parent or guardian, you may
+															complete the questionnaire on their behalf.</p>
+														<a href="#" class="btn btn-primary">Complete
+															questionnaire</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="component-control id-Z7_MAI21141LO6AF06MS1E6OQM5V3">
+				<!-- The Control element contains the portlet banner and the portlet content. -->
+				<div class="ibmPortalControl stControl wpthemeControl a11yRegionTarget"
+					aria-labelledby="wpRegionIdZ7_MAI21141LO6AF06MS1E6OQM5V3">
+					<!-- The ControlHeader element is the banner which contains the portlet title and menu -->
+					<div class="stControlHeader wpthemeControlHeader" data-swiftype-index="false">
+						<!-- A FocusableLink shows or hides the ControlHeader when the link receives a "focus" or "blur" event. This -->
+						<!-- element's event handlers are added by JavaScript in the st_skin module when the page is in "Edit" mode. -->
+						<!-- This link corresponds to the entire ControlHeader element. -->
+					</div>
+					<!-- The ControlBody element contains the portlet content. -->
+					<div class="stControlBody stOverflowAuto wpthemeControlBody">
+						<!-- The "lm:control" dynamic spot is used for the markup of a layout control. -->
+						<script>
+							$(document).ready(function () {
+								var isopenonload = $("#collapse-Collapsible-with-image_2-WR-Z6_MAI21141L07100ANU76P7C0QE9").hasClass('in');
+								if (isopenonload) {
+									$("#div-Collapsible-with-image_5-WR").parent().addClass('default-component-spacing');
+								}
+								$("#div-Collapsible-with-image_5-WR.panel-heading").click(function () {
+									$(this.nextElementSibling).slideToggle();
+									$("#spn-Collapsible-with-image_5-WR").toggleClass("uil-plus uil-plus-45");
+									var isVisible = $("#div-Collapsible-with-image_5-WR").parent().hasClass('default-component-spacing');
+									if (isVisible) {
+										$("#div-Collapsible-with-image_5-WR").parent().removeClass('default-component-spacing');
+										$("#collapse-Collapsible-with-image_2-WR-Z6_MAI21141L07100ANU76P7C0QE9").removeClass('in');
+									} else {
+										$("#div-Collapsible-with-image_5-WR").parent().addClass('default-component-spacing');
+									}
+								});
+							});
+						</script>
+						<style>
+							.collapseicon {
+								float: right;
+								color: #0087c0;
+							}
+						</style>
+						<div class="central-page-component akordian-main-div akordian-Collapsible-with-image_2-WR"
+							id="Collapsible-with-image_2-WR-Z6_MAI21141L07100ANU76P7C0QE9">
+							<div class="container">
+								<div class="colapsebody">
+									<div class="panel-group" id="accordian-Collapsible-with-image_2-WR">
+										<div class="panel panel-default">
+											<div class="panel-heading Collapsible-with-image_2-WR-Z6_MAI21141L07100ANU76P7C0QE9 collapsing-panel "
+												id="div-Collapsible-with-image_5-WR">
+												<h4 class="panel-title" data-swiftype-index="true">
+													<span>
+														<span class="collapseicon uil uil-plus"
+															id="spn-Collapsible-with-image_5-WR"></span>
+														<div>Other billing arrangements</div>
+													</span>
+												</h4>
+											</div>
+											<div class="panel-collapse collapse akordian-css "
+												id="collapse-Collapsible-with-image_2-WR-Z6_MAI21141L07100ANU76P7C0QE9">
+												<div class="panel-body">
+													<div class="mid-section-rich-text-with-image  mid-section-ul"
+														id="main_content">
+														<h4>Self-funded arrangements</h4>
+														<p>Some self-funded groups pay a monthly administrative
+															fee for every enrolled subscriber or member,
+															depending on their financial arrangements. The group
+															also pays for the claims paid by Capital Blue Cross
+															for the arrangement’s specific billing period.</p>
+														<p></p>
+														<p>We invoice self-funded groups differently from the
+															groups that pay a monthly rate. As long as the
+															groups are HIPAA compliant, we also send a list of
+															claims we have paid on the group’s behalf.</p>
+														<h4>Health savings account (HSA) and health
+															reimbursement arrangement (HRA) billing</h4>
+														<p>Separate vendors bill and collect the fees for the
+															administration of HSA/HRA accounts. Groups must
+															contract directly with a banking partner for HSA
+															services.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="component-control id-Z7_MAI21141LO6AF06MS1E6OQM5V3">
+				<!-- The Control element contains the portlet banner and the portlet content. -->
+				<div class="ibmPortalControl stControl wpthemeControl a11yRegionTarget"
+					aria-labelledby="wpRegionIdZ7_MAI21141LO6AF06MS1E6OQM5V3">
+					<!-- The ControlHeader element is the banner which contains the portlet title and menu -->
+					<div class="stControlHeader wpthemeControlHeader" data-swiftype-index="false">
+						<!-- A FocusableLink shows or hides the ControlHeader when the link receives a "focus" or "blur" event. This -->
+						<!-- element's event handlers are added by JavaScript in the st_skin module when the page is in "Edit" mode. -->
+						<!-- This link corresponds to the entire ControlHeader element. -->
+					</div>
+					<!-- The ControlBody element contains the portlet content. -->
+					<div class="stControlBody stOverflowAuto wpthemeControlBody">
+						<!-- The "lm:control" dynamic spot is used for the markup of a layout control. -->
+						<script>
+							$(document).ready(function () {
+								var isopenonload = $("#collapse-Collapsible-with-image_3-WR-Z6_MAI21141L07100ANU76P7C0QE0").hasClass('in');
+								if (isopenonload) {
+									$("#div-Collapsible-with-image_6-WR").parent().addClass('default-component-spacing');
+								}
+								$("#div-Collapsible-with-image_6-WR.panel-heading").click(function () {
+									$(this.nextElementSibling).slideToggle();
+									$("#spn-Collapsible-with-image_6-WR").toggleClass("uil-plus uil-plus-45");
+									var isVisible = $("#div-Collapsible-with-image_6-WR").parent().hasClass('default-component-spacing');
+									if (isVisible) {
+										$("#div-Collapsible-with-image_6-WR").parent().removeClass('default-component-spacing');
+										$("#collapse-Collapsible-with-image_3-WR-Z6_MAI21141L07100ANU76P7C0QE0").removeClass('in');
+									} else {
+										$("#div-Collapsible-with-image_6-WR").parent().addClass('default-component-spacing');
+									}
+								});
+							});
+						</script>
+						<style>
+							.collapseicon {
+								float: right;
+								color: #0087c0;
+							}
+						</style>
+						<div class="central-page-component akordian-main-div akordian-Collapsible-with-image_3-WR"
+							id="Collapsible-with-image_3-WR-Z6_MAI21141L07100ANU76P7C0QE0">
+							<div class="container">
+								<div class="colapsebody">
+									<div class="panel-group" id="accordian-Collapsible-with-image_3-WR">
+										<div class="panel panel-default">
+											<div class="panel-heading Collapsible-with-image_3-WR-Z6_MAI21141L07100ANU76P7C0QE0 collapsing-panel "
+												id="div-Collapsible-with-image_6-WR">
+												<h4 class="panel-title" data-swiftype-index="true">
+													<span>
+														<span class="collapseicon uil uil-plus"
+															id="spn-Collapsible-with-image_6-WR"></span>
+														<div>Specific billing practices</div>
+													</span>
+												</h4>
+											</div>
+											<div class="panel-collapse collapse akordian-css "
+												id="collapse-Collapsible-with-image_3-WR-Z6_MAI21141L07100ANU76P7C0QE0">
+												<div class="panel-body">
+													<div class="mid-section-rich-text-with-image  mid-section-ul"
+														id="main_content">
+														<h4>Actual effective date/split month billing</h4>
+														<p>In actual effective date/split month billing, the
+															coverage or cancellation effective date is the date
+															you provide. We enroll initial and newly eligible
+															members or terminate members effective as of the
+															date you choose. We approve that date according to
+															our retroactive policy.</p>
+														<h4>Additions</h4>
+														<p>If the effective date of the new enrollee(s) falls
+															within the first 15 days of the billing cycle, we
+															apply a charge. If the effective date falls after
+															the 15th day but before the first day of the next
+															billing cycle, we don’t apply a charge.</p>
+														<h4>Terminations</h4>
+														<p>If the effective date of termination falls within the
+															first 14 days of the billing cycle, we apply a
+															credit. If the effective date of the termination
+															falls after the 14th day but before the first day of
+															the next billing cycle, we apply a charge.</p>
+														<p>Our systems use through logic instead of to-date
+															logic. For example, if you terminate a member
+															effective July 11, the member’s coverage is
+															effective through the end of that day — 11:59 PM on
+															July 11. The termination is effective at midnight on
+															July 12.</p>
+														<h4>Newborn or adopted dependents</h4>
+														<p>Always report the addition of a newborn or adopted
+															child, even if there’s no rate change. If the
+															contract is not for family coverage until the birth
+															of the newborn, your group must pay for family
+															coverage after the billing period for the month the
+															child was born if enrollment was submitted within 60
+															days of the birth.</p>
+														<p>If the dependent child is born or adopted from the
+															first through the 15th of the month, your group is
+															billed for the rate change — if applicable — for the
+															entire month in which the child is born or adopted.
+															If the dependent child is born or adopted from the
+															16th through the last day of the month, your group
+															is billed for the rate change — if applicable —
+															starting the first of the following month in which
+															the child is born or adopted.</p>
+														<h4>Death of a member</h4>
+														<p>In the event of a death, terminating a contract or
+															removing a spouse/dependent becomes effective the
+															first billing date for your group after the date of
+															death. However, there are certain exceptions. For
+															example, if your group reports a deceased subscriber
+															who has active dependents remaining on the contract,
+															the retroactive period is limited to 60 days.</p>
+														<h4>Premiums for individual coverage</h4>
+														<p>As the employer, you cannot pay the cost of
+															individual health insurance premiums for your active
+															employees. This may violate several laws, including
+															but not limited to, the Employee Retirement Income
+															Security Act (ERISA), Medicare Secondary Payer
+															(MSP), Americans with Disabilities Act (ADA), and
+															Patient Protection and Affordable Care Act (PPACA).
+														</p>
+														<p>We will reject an individual policy payment for an
+															active employee if we know or have reason to believe
+															the payment will violate a federal or state law,
+															statute, regulation, or rule.</p>
+														<h4>Healthcare reform and billing</h4>
+														<p>You may see some changes to your invoice statement as
+															a result of healthcare reform. Each covered employee
+															will now be listed with their specific rate
+															calculated on the monthly premium statement, so your
+															invoice may become longer. Also, adding or removing
+															a dependent will immediately impact the subscriber’s
+															total rate on your group’s next monthly bill.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<section class="section-divider">
+				<h2>RTE plus collapsible 50/50</h2>
+				<p>(New)</p>
+			</section>
+		</div>
+		<div class="container">
+			<div class="component-control row">
+				<div class="col-md-6">
+					<h2>Wellness</h2>
+					<p>A confidential health assessment is a great place to start for your employees to take control of
+						their health. A heath assessment:</p>
+					<ul>
+						<li>Generally, takes less than 15 minutes to complete.</li>
+						<li>Provides members a wealth of information about their current health status.</li>
+						<li>Identifies potential lifestyle risk factors and readiness to change.</li>
+						<li>Helps your employees understand what steps to take to improve or maintain their health with a
+							personalized plan.</li>
+					</ul>
+				</div>
+				<div class="col-md-6" style="padding: 24px 0 0">
+					<div class="id-Z7_MAI21141LO6AF06MS1E6OQM5V3">
+						<!-- The Control element contains the portlet banner and the portlet content. -->
+						<div class="ibmPortalControl stControl wpthemeControl a11yRegionTarget"
+							aria-labelledby="wpRegionIdZ7_MAI21141LO6AF06MS1E6OQM5V3">
+							<!-- The ControlHeader element is the banner which contains the portlet title and menu -->
+							<div class="stControlHeader wpthemeControlHeader" data-swiftype-index="false">
+								<!-- A FocusableLink shows or hides the ControlHeader when the link receives a "focus" or "blur" event. This -->
+								<!-- element's event handlers are added by JavaScript in the st_skin module when the page is in "Edit" mode. -->
+								<!-- This link corresponds to the entire ControlHeader element. -->
+							</div>
+							<!-- The ControlBody element contains the portlet content. -->
+							<div class="stControlBody stOverflowAuto wpthemeControlBody">
+								<!-- The "lm:control" dynamic spot is used for the markup of a layout control. -->
+								<script>
+									$(document).ready(function () {
+										var isopenonload = $("#collapse-Collapsible-with-image_1-WR-Z6_MAI21141L07100ANU76P7C0QE7").hasClass('in');
+										if (isopenonload) {
+											$("#div-Collapsible-with-image_1-WR").parent().addClass('default-component-spacing');
+										}
+										$("#div-Collapsible-with-image_1-WR.panel-heading").click(function () {
+											$(this.nextElementSibling).slideToggle();
+											$("#spn-Collapsible-with-image_1-WR").toggleClass("uil-plus uil-plus-45");
+											var isVisible = $("#div-Collapsible-with-image_1-WR").parent().hasClass('default-component-spacing');
+											if (isVisible) {
+												$("#div-Collapsible-with-image_1-WR").parent().removeClass('default-component-spacing');
+												$("#collapse-Collapsible-with-image_1-WR-Z6_MAI21141L07100ANU76P7C0QE7").removeClass('in');
+											} else {
+												$("#div-Collapsible-with-image_1-WR").parent().addClass('default-component-spacing');
+											}
+										});
+									});
+								</script>
+								<style>
+									.collapseicon {
+										float: right;
+										color: #0087c0;
+									}
+								</style>
+								<div class="central-page-component akordian-main-div akordian-Collapsible-with-image_1-WR"
+									id="Collapsible-with-image_1-WR-Z6_MAI21141L07100ANU76P7C0QE7">
+									<div class="container">
+										<div class="colapsebody">
+											<div class="panel-group" id="accordian-Collapsible-with-image_1-WR">
+												<div class="panel panel-default">
+													<div class="panel-heading Collapsible-with-image_1-WR-Z6_MAI21141L07100ANU76P7C0QE7 collapsing-panel "
+														id="div-Collapsible-with-image_1-WR">
+														<h4 class="panel-title" data-swiftype-index="true">
+															<span>
+																<span class="collapseicon uil uil-plus"
+																	id="spn-Collapsible-with-image_1-WR"></span>
+																<div>Complete the member health equity questionnaire
+																</div>
+															</span>
+														</h4>
+													</div>
+													<div class="panel-collapse collapse akordian-css "
+														id="collapse-Collapsible-with-image_1-WR-Z6_MAI21141L07100ANU76P7C0QE7">
+														<div class="panel-body">
+															<div class="mid-section-rich-text-with-image  mid-section-ul"
+																id="main_content">
+																<p>Your answers to the <a
+																		href="https://www.capbluecross.com/HEQuestionnaire"
+																		target="_blank" rel="noopener">health equity
+																		questionnaire</a>&nbsp;will help us record your
+																	cultural and linguistic needs, share those
+																	preferences with your providers, develop more
+																	inclusive programs and services, educate our
+																	workforce, and more respectfully engage with the
+																	people and communities we serve.</p>
+																<p>As a reminder, your privacy is important to us. This
+																	optional, secure questionnaire and the information
+																	you provide will be protected through our
+																	established and tested <a
+																		href="/wps/myportal/cap/about/notices">privacy</a>
+																	and <a
+																		href="/wps/myportal/cap/about/site-privacy">digital
+																		security</a> policies. This information will not
+																	be used to make any decisions about coverage or
+																	services. Come back anytime to make updates.</p>
+																<p>If you have any questions or need help with language
+																	assistance, please call the number on the back of
+																	your ID card.</p>
+																<p>Note, if you have dependents who are under the age of
+																	18 or you are a CHIP parent or guardian, you may
+																	complete the questionnaire on their behalf.</p>
+																<a href="#" class="btn btn-primary">Complete
+																	questionnaire</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="component-control id-Z7_MAI21141LO6AF06MS1E6OQM5V3">
+						<!-- The Control element contains the portlet banner and the portlet content. -->
+						<div class="ibmPortalControl stControl wpthemeControl a11yRegionTarget"
+							aria-labelledby="wpRegionIdZ7_MAI21141LO6AF06MS1E6OQM5V3">
+							<!-- The ControlHeader element is the banner which contains the portlet title and menu -->
+							<div class="stControlHeader wpthemeControlHeader" data-swiftype-index="false">
+								<!-- A FocusableLink shows or hides the ControlHeader when the link receives a "focus" or "blur" event. This -->
+								<!-- element's event handlers are added by JavaScript in the st_skin module when the page is in "Edit" mode. -->
+								<!-- This link corresponds to the entire ControlHeader element. -->
+							</div>
+							<!-- The ControlBody element contains the portlet content. -->
+							<div class="stControlBody stOverflowAuto wpthemeControlBody">
+								<!-- The "lm:control" dynamic spot is used for the markup of a layout control. -->
+								<script>
+									$(document).ready(function () {
+										var isopenonload = $("#collapse-Collapsible-with-image_2-WR-Z6_MAI21141L07100ANU76P7C0QE7").hasClass('in');
+										if (isopenonload) {
+											$("#div-Collapsible-with-image_2-WR").parent().addClass('default-component-spacing');
+										}
+										$("#div-Collapsible-with-image_2-WR.panel-heading").click(function () {
+											$(this.nextElementSibling).slideToggle();
+											$("#spn-Collapsible-with-image_2-WR").toggleClass("uil-plus uil-plus-45");
+											var isVisible = $("#div-Collapsible-with-image_2-WR").parent().hasClass('default-component-spacing');
+											if (isVisible) {
+												$("#div-Collapsible-with-image_2-WR").parent().removeClass('default-component-spacing');
+												$("#collapse-Collapsible-with-image_2-WR-Z6_MAI21141L07100ANU76P7C0QE7").removeClass('in');
+											} else {
+												$("#div-Collapsible-with-image_2-WR").parent().addClass('default-component-spacing');
+											}
+										});
+									});
+								</script>
+								<style>
+									.collapseicon {
+										float: right;
+										color: #0087c0;
+									}
+								</style>
+								<div class="central-page-component akordian-main-div akordian-Collapsible-with-image_2-WR"
+									id="Collapsible-with-image_2-WR-Z6_MAI21141L07100ANU76P7C0QE7">
+									<div class="container">
+										<div class="colapsebody">
+											<div class="panel-group" id="accordian-Collapsible-with-image_2-WR">
+												<div class="panel panel-default">
+													<div class="panel-heading Collapsible-with-image_2-WR-Z6_MAI21141L07100ANU76P7C0QE7 collapsing-panel "
+														id="div-Collapsible-with-image_2-WR">
+														<h4 class="panel-title" data-swiftype-index="true">
+															<span>
+																<span class="collapseicon uil uil-plus"
+																	id="spn-Collapsible-with-image_2-WR"></span>
+																<div>Other billing arrangements</div>
+															</span>
+														</h4>
+													</div>
+													<div class="panel-collapse collapse akordian-css "
+														id="collapse-Collapsible-with-image_2-WR-Z6_MAI21141L07100ANU76P7C0QE7">
+														<div class="panel-body">
+															<div class="mid-section-rich-text-with-image  mid-section-ul"
+																id="main_content">
+																<h4>Self-funded arrangements</h4>
+																<p>Some self-funded groups pay a monthly administrative
+																	fee for every enrolled subscriber or member,
+																	depending on their financial arrangements. The group
+																	also pays for the claims paid by Capital Blue Cross
+																	for the arrangement’s specific billing period.</p>
+																<p></p>
+																<p>We invoice self-funded groups differently from the
+																	groups that pay a monthly rate. As long as the
+																	groups are HIPAA compliant, we also send a list of
+																	claims we have paid on the group’s behalf.</p>
+																<h4>Health savings account (HSA) and health
+																	reimbursement arrangement (HRA) billing</h4>
+																<p>Separate vendors bill and collect the fees for the
+																	administration of HSA/HRA accounts. Groups must
+																	contract directly with a banking partner for HSA
+																	services.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="component-control id-Z7_MAI21141LO6AF06MS1E6OQM5V3">
+						<!-- The Control element contains the portlet banner and the portlet content. -->
+						<div class="ibmPortalControl stControl wpthemeControl a11yRegionTarget"
+							aria-labelledby="wpRegionIdZ7_MAI21141LO6AF06MS1E6OQM5V3">
+							<!-- The ControlHeader element is the banner which contains the portlet title and menu -->
+							<div class="stControlHeader wpthemeControlHeader" data-swiftype-index="false">
+								<!-- A FocusableLink shows or hides the ControlHeader when the link receives a "focus" or "blur" event. This -->
+								<!-- element's event handlers are added by JavaScript in the st_skin module when the page is in "Edit" mode. -->
+								<!-- This link corresponds to the entire ControlHeader element. -->
+							</div>
+							<!-- The ControlBody element contains the portlet content. -->
+							<div class="stControlBody stOverflowAuto wpthemeControlBody">
+								<!-- The "lm:control" dynamic spot is used for the markup of a layout control. -->
+								<script>
+									$(document).ready(function () {
+										var isopenonload = $("#collapse-Collapsible-with-image_3-WR-Z6_MAI21141L07100ANU76P7C0QE7").hasClass('in');
+										if (isopenonload) {
+											$("#div-Collapsible-with-image_3-WR").parent().addClass('default-component-spacing');
+										}
+										$("#div-Collapsible-with-image_3-WR.panel-heading").click(function () {
+											$(this.nextElementSibling).slideToggle();
+											$("#spn-Collapsible-with-image_3-WR").toggleClass("uil-plus uil-plus-45");
+											var isVisible = $("#div-Collapsible-with-image_3-WR").parent().hasClass('default-component-spacing');
+											if (isVisible) {
+												$("#div-Collapsible-with-image_3-WR").parent().removeClass('default-component-spacing');
+												$("#collapse-Collapsible-with-image_3-WR-Z6_MAI21141L07100ANU76P7C0QE7").removeClass('in');
+											} else {
+												$("#div-Collapsible-with-image_3-WR").parent().addClass('default-component-spacing');
+											}
+										});
+									});
+								</script>
+								<style>
+									.collapseicon {
+										float: right;
+										color: #0087c0;
+									}
+								</style>
+								<div class="central-page-component akordian-main-div akordian-Collapsible-with-image_3-WR"
+									id="Collapsible-with-image_3-WR-Z6_MAI21141L07100ANU76P7C0QE7">
+									<div class="container">
+										<div class="colapsebody">
+											<div class="panel-group" id="accordian-Collapsible-with-image_3-WR">
+												<div class="panel panel-default">
+													<div class="panel-heading Collapsible-with-image_3-WR-Z6_MAI21141L07100ANU76P7C0QE7 collapsing-panel "
+														id="div-Collapsible-with-image_3-WR">
+														<h4 class="panel-title" data-swiftype-index="true">
+															<span>
+																<span class="collapseicon uil uil-plus"
+																	id="spn-Collapsible-with-image_3-WR"></span>
+																<div>Specific billing practices</div>
+															</span>
+														</h4>
+													</div>
+													<div class="panel-collapse collapse akordian-css "
+														id="collapse-Collapsible-with-image_3-WR-Z6_MAI21141L07100ANU76P7C0QE7">
+														<div class="panel-body">
+															<div class="mid-section-rich-text-with-image  mid-section-ul"
+																id="main_content">
+																<h4>Actual effective date/split month billing</h4>
+																<p>In actual effective date/split month billing, the
+																	coverage or cancellation effective date is the date
+																	you provide. We enroll initial and newly eligible
+																	members or terminate members effective as of the
+																	date you choose. We approve that date according to
+																	our retroactive policy.</p>
+																<h4>Additions</h4>
+																<p>If the effective date of the new enrollee(s) falls
+																	within the first 15 days of the billing cycle, we
+																	apply a charge. If the effective date falls after
+																	the 15th day but before the first day of the next
+																	billing cycle, we don’t apply a charge.</p>
+																<h4>Terminations</h4>
+																<p>If the effective date of termination falls within the
+																	first 14 days of the billing cycle, we apply a
+																	credit. If the effective date of the termination
+																	falls after the 14th day but before the first day of
+																	the next billing cycle, we apply a charge.</p>
+																<p>Our systems use through logic instead of to-date
+																	logic. For example, if you terminate a member
+																	effective July 11, the member’s coverage is
+																	effective through the end of that day — 11:59 PM on
+																	July 11. The termination is effective at midnight on
+																	July 12.</p>
+																<h4>Newborn or adopted dependents</h4>
+																<p>Always report the addition of a newborn or adopted
+																	child, even if there’s no rate change. If the
+																	contract is not for family coverage until the birth
+																	of the newborn, your group must pay for family
+																	coverage after the billing period for the month the
+																	child was born if enrollment was submitted within 60
+																	days of the birth.</p>
+																<p>If the dependent child is born or adopted from the
+																	first through the 15th of the month, your group is
+																	billed for the rate change — if applicable — for the
+																	entire month in which the child is born or adopted.
+																	If the dependent child is born or adopted from the
+																	16th through the last day of the month, your group
+																	is billed for the rate change — if applicable —
+																	starting the first of the following month in which
+																	the child is born or adopted.</p>
+																<h4>Death of a member</h4>
+																<p>In the event of a death, terminating a contract or
+																	removing a spouse/dependent becomes effective the
+																	first billing date for your group after the date of
+																	death. However, there are certain exceptions. For
+																	example, if your group reports a deceased subscriber
+																	who has active dependents remaining on the contract,
+																	the retroactive period is limited to 60 days.</p>
+																<h4>Premiums for individual coverage</h4>
+																<p>As the employer, you cannot pay the cost of
+																	individual health insurance premiums for your active
+																	employees. This may violate several laws, including
+																	but not limited to, the Employee Retirement Income
+																	Security Act (ERISA), Medicare Secondary Payer
+																	(MSP), Americans with Disabilities Act (ADA), and
+																	Patient Protection and Affordable Care Act (PPACA).
+																</p>
+																<p>We will reject an individual policy payment for an
+																	active employee if we know or have reason to believe
+																	the payment will violate a federal or state law,
+																	statute, regulation, or rule.</p>
+																<h4>Healthcare reform and billing</h4>
+																<p>You may see some changes to your invoice statement as
+																	a result of healthcare reform. Each covered employee
+																	will now be listed with their specific rate
+																	calculated on the monthly premium statement, so your
+																	invoice may become longer. Also, adding or removing
+																	a dependent will immediately impact the subscriber’s
+																	total rate on your group’s next monthly bill.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<section class="section-divider">
+				<h2>RTE Image 50/50</h2>
+				<p>(New component, flex right or left, five or more background color options)</p>
+			</section>
+		</div>
+		<div class="component-control id-Z7_MAI21141LOG0006U5G93QIICV2">
+			<div class="ibmPortalControl stControl wpthemeControl a11yRegionTarget"
+				aria-labelledby="wpRegionIdZ7_MAI21141LOG0006U5G93QIICV2">
+				<div class="stControlBody stOverflowAuto wpthemeControlBody">
+					<style>
+						.flex-wrapper {
+							overflow: hidden;
+						}
+	
+						.flex-box {
+							align-items: center;
+							display: flex;
+							flex-wrap: wrap;
+							gap: 15rem;
+							opacity: 0;
+							padding-bottom: 12rem;
+							padding-top: 15rem;
+							transition: opacity 0.6s ease-in-out;
+						}
+	
+						.flex-box.lazy-loaded {
+							opacity: 1;
+						}
+	
+						.flex-box-content,
+						.flex-box-image {
+							flex: 1;
+							min-width: 477px;
+							position: relative;
+						}
+	
+						.flex-box-content {
+							opacity: 0;
+							transform: translateX(-4.5rem);
+							transition: transform 1.2s, opacity 1.2s;
+						}
+	
+						.flex-box-content.lazy-loaded {
+							opacity: 1;
+							transform: translateX(0);
+						}
+	
+						.flex-box-copy {
+							z-index: 1;
+						}
+	
+						.flex-box-content::before {
+							content: '';
+							left: 50%;
+							max-height: 750px;
+							min-height: 543px;
+							position: absolute;
+							top: 50%;
+							transform: translate(-42%, -51%);
+							width: 150vw;
+							z-index: -1;
+						}
+	
+						.flex-box-content.flex-left::before {
+							width: 117vw;
+						}
+	
+						.flex-box-image {
+							text-align: right;
+							width: 100%;
+						}
+	
+						.flex-box-image img {
+							max-width: 100%;
+							position: relative;
+							transform: translate(-18%, -12%);
+							z-index: 1;
+						}
+						
+						.flex-blue-green > .flex-box-copy > h1, .flex-blue-green > .flex-box-copy > h2,
+						.flex-blue-green > .flex-box-copy > p, .flex-blue-green > .flex-box-copy > .lead {
+							color: #fff;
+						}
+	
+						@media (max-width: 1200px) {
+							.flex-box {
+								gap: 9rem
+							}
+	
+							.flex-box-content,
+							.flex-box-image {
+								min-width: 100%;
+								text-align: center;
+							}
+							
+							.flex-box-image::before {
+								display: none;
+							}
+	
+							.flex-box-image img {
+								max-width: 600px;
+								transform: translate(0, 0%);
+								width: 100%;
+							}
+						}
+					</style>
+					<script>
+						document.addEventListener("DOMContentLoaded", function() {
+							const flexBoxes = document.querySelectorAll('.flex-box');
+	
+							const observer = new IntersectionObserver((entries, observer) => {
+								entries.forEach((entry, index) => {
+									if (entry.isIntersecting) {
+										setTimeout(() => {
+											entry.target.classList.add('lazy-loaded');
+											const content = entry.target.querySelector('.flex-box-content');
+											if (content) {
+												content.classList.add('lazy-loaded');
+											}
+										}, index * 600);
+										observer.unobserve(entry.target);
+									}
+								});
+							}, {
+								threshold: 0.1
+							});
+	
+							flexBoxes.forEach(box => {
+								observer.observe(box);
+							});
+						});
+					</script>
+					<div class="flex-wrapper">
+						<div class="container flex-box">
+							<div class="flex-box-image">
+								<img src="assets/img/global/connect.jpg" alt="Capital Blue Store"
+									class="image-rich-text-with-image" loading="">
+							</div>
+							<div class="flex-box-content flex-lightest-grey">
+								<div class="flex-box-copy">
+									<h2>Capital Blue Cross Connect</h2>
+									<p class="lead">Learn more about our health and wellness centers.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat.</p>
+									<a href="#" class="btn btn-success">Start here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer element -->
+	<footer>
+		<div class="progress-wrap">
+			<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+				<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+			</svg>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 information">
+					<h4>Information</h4>
+					<div class="row">
+						<div class="col-sm-3">
+							<p><a href="about.html">About Us</a></p>
+							<p><a href="plain.html">Careers</a></p>
+							<p><a href="plain.html">Code of Conduct</a></p>
+						</div>
+						<div class="col-sm-3">
+							<p><a href="plain.html">Developers</a></p>
+							<p><a href="plain.html">HIPAA</a></p>
+							<p><a href="plain.html">Legal</a></p>
+						</div>
+						<div class="col-sm-3">
+							<p><a href="plain.html">Machine readable directories</a></p>
+							<p><a href="plain.html">Nondiscrimination</a></p>
+							<p><a href="plain.html">Privacy</a></p>
+						</div>
+						<div class="col-sm-3">
+							<p><a href="plain.html">Sitemap</a></p>
+							<p><a href="plain.html">SMS terms of use</a></p>
+							<p><a href="plain.html">Web Accessibility</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 social">
+					<h4>Download our app</h4>
+					<a href="https://itunes.apple.com/nz/app/capital-blue/id690763566" target="_blank"
+						aria-label="Navigate to iPhone App"><em class="fa fa-apple"
+							aria-hidden="true"></em></a>
+					<a href="https://play.google.com/store/apps/details?id=com.capbluecross.membermobileapp"
+						target="_blank" aria-label="Navigate to Android App"><em
+							class="fa fa-android" aria-hidden="true"></em></a>
+					<h4>Follow us</h4>
+					<a href="https://www.facebook.com/Capbluecross/" target="_blank" aria-label="Navigate to Facebook"
+						><em class="fa fa-facebook" aria-hidden="true"></em></a>
+					<a href="https://twitter.com/capbluecross" target="_blank" alt="Twitter icon"
+						aria-label="Navigate to Twitter" class="dark-bg-anchor x"><svg
+							xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+							<style>
+								svg {
+									fill: #fff
+								}
+							</style>
+							<path
+								d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+							</path>
+						</svg></a>
+					<a href="https://www.youtube.com/user/capbluecross" target="_blank" aria-label="Navigate to YouTube"
+						><em class="fa fa-youtube" aria-hidden="true"></em></a>
+					<a href="https://www.pinterest.com/capbluecross/" target="_blank" aria-label="Navigate to Pinterest"
+						><em class="fa fa-pinterest" aria-hidden="true"></em></a>
+					<a href="https://www.linkedin.com/company-beta/21312/?pathWildcard=21312" target="_blank"
+						aria-label="Navigate to LinkedIn"><em class="fa fa-linkedin"
+							aria-hidden="true"></em></a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<p>Health care benefit programs issued or administered by Capital BlueCross and/or its subsidiaries,
+						Capital Advantage Insurance Company<sup>®</sup>, Capital Advantage Assurance Company<sup>®</sup>
+						and Keystone Health Plan<sup>®</sup> Central. Independent licensees of the BlueCross BlueShield
+						Association serving 21 counties in Central Pennsylvania and the Lehigh Valley. Communications
+						issued by Capital BlueCross in its capacity as administrator of programs and provider relations
+						for all companies.</p>
+					<p class="copyright">© 2024 Capital BlueCross All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

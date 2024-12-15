@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Base meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=0.80">
+
+	<!-- Descriptive meta -->
+	<title>Capital BlueCross</title>
+	<meta name="title" content="max 65 character title">
+	<meta name="description" content="max 165 character description">
+	<meta name="keywords" content="comma, separated, list">
+	<meta name="author" content="Capital BlueCross">
+
+	<!-- CDN loaded CSS assets, we are loading these from CDN for performance however assets can be loaded locally if desired -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+
+	<!-- CDN loaded JS assets -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+
+	<!-- These plugins are optional and should only be loaded where video/rotating image banners are used -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vide/0.5.1/jquery.vide.min.js"></script>
+	<script src="assets/js/jquery.bgswitcher.js"></script>
+
+	<!-- CBC specific assets -->
+	<link href="assets/css/app.css" rel="stylesheet"><!-- Global portal stying -->
+	<link href="assets/css/banners.css" rel="stylesheet"><!-- Page banners -->
+	<link href="assets/css/cbc-icons.css" rel="stylesheet"><!-- CBC sprite icon pack -->
+	<script src="assets/js/app.js"></script>
+</head>
+<body class="login-bg">
+	<div class="login-container">
+		<div class="login-register">
+			<p class="text-center">Don't have an account? <a
+				href="/UserSecurity/Registration/RegistrationStart.xhtml" class="dark-bg-anchor">Register</a></p>
+		</div>
+		<div class="login-content text-center">
+			<h1 class="login-home"><a href="https://www.capbluecross.com" aria-label="Back to home">
+				<img src="assets/img/global/capital-blue-cross-logo.png"
+					alt="Capital Blue Cross"></a></h1>
+		</div>
+		<form class="login-form" id="loginForm" name="loginForm" method="post"
+			action="/UserSecurity/Login.xhtml?jfwid=-zgqt0riao&amp;HOSTNAME=www.capbluecross.com&amp;USERNAME=unauthenticated&amp;URL=https%3A%2F%2Fwww.capbluecross.com%2Fwps%2Fmyportal%2Fcap%2Fhome&amp;TAM_OP=login&amp;ERROR_CODE=0x00000000"
+			onkeypress="if (event.keyCode == 13) document.getElementById('loginButton').click();" class="pad-top"
+			enctype="application/x-www-form-urlencoded"><input type="hidden" id="loginForm:recaptchaToken"
+				name="loginForm:recaptchaToken" value=""><input type="hidden"
+				id="loginForm:l55c3875-82a2-44a7-850d-7fb2ea2f5b2d"
+				name="loginForm:l55c3875-82a2-44a7-850d-7fb2ea2f5b2d" value="6a19c2f8-d419-4f1e-b69c-962af86b5745">
+			<div class="form-group">
+				<div id="loginForm:globalMessages"></div>
+			</div>
+			<div id="loginForm:userIDdiv" class="form-group">
+				<label class="block-label" for="loginForm:userID" aria-label="Username">&nbsp;</label>
+				<input id="loginForm:userID" name="loginForm:userID" type="text" value="" maxlength="32"
+					class="form-control" tabindex="1" placeholder="Username" autofocus="true">
+				<span class="fa fa-user input-icon"></span>
+				<span id="loginForm:userID-error"></span>
+			</div>
+			<div id="loginForm:passwordDiv" class="form-group">
+				<label class="block-label" for="loginForm:password" aria-label="Password">&nbsp;</label>
+				<input type="password" id="loginForm:password" name="loginForm:password" maxlength="32" class="form-control" tabindex="2" placeholder="Password">
+				<span class="fa fa-lock input-icon"></span>
+				<span class="fa fa-eye-slash input-icon-eye" id="togglePassword" onclick="togglePasswordVisibility('loginForm','password','togglePassword');"></span>
+				<span id="loginForm:password-error"></span>
+			</div>
+			<div class="login-button">
+				<button id="loginButton" type="button" class="btn btn-primary"
+				onclick="showSpinner(this);loginButtonClick('loginForm', '6LdgTQskAAAAACkWoipzT2oP-UlFE27OCi2tQfjN');">Login</button>&nbsp;
+			<span class="fa fa-refresh fa-spin cbc-spinner" style="display: none;"></span>
+			</div>
+			<a href="#" onclick="return jsf.util.chain(document.getElementById('loginForm:loginLink'), event,'return myfaces.oam.submitForm(\'loginForm\',\'loginForm:loginLink\');');" id="loginForm:loginLink" name="loginForm:loginLink" tabindex="3" type="submit" style="display:none;">Login <em class="fa fa-angle-right"></em></a>&nbsp;
+			<span class="fa fa-refresh fa-spin cbc-spinner" style="display: none;"></span>
+			<input type="hidden" name="loginForm_SUBMIT" value="1">
+			<input type="hidden" name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:1" value="+hbUDgfHcBTqi4wlrXYeBfhzV+LKOYorBZi3QOMJdMyAphr1x6J98FkhpOzFExcyRnzSDQ==" autocomplete="off">
+			<input type="hidden" id="j_id__v_0:javax.faces.ClientWindow:1" name="javax.faces.ClientWindow" value="-zgqt0riao">
+		</form>
+		<div class="login-help text-center">
+			<p><a href="/UserSecurity/ForgotUserID.xhtml">Forgot username?</a> | <a href="#" onclick="return myfaces.oam.submitForm('loginForm','loginForm:j_id_1a');">Forgot password?</a></p>
+		</div>
+		<div class="login-footer text-center">
+			<p>Healthcare benefit programs issued or administered by Capital Blue Cross and/or its
+				subsidiaries, Capital Advantage Insurance Company<sup>®</sup>, Capital Advantage Assurance
+				Company<sup>®</sup> and Keystone Health Plan<sup>®</sup> Central. Independent licensees of the Blue Cross
+				Blue Shield Association. Communications issued by Capital Blue Cross in its capacity as administrator of
+				programs and provider relations for all companies.
+			</p>
+			<p>© 2024 Capital Blue Cross All Rights Reserved. | <a
+					href="https://www.capbluecross.com/wps/portal/cap/about/site-privacy">Review our Privacy Statement</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

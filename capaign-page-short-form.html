@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Base meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=0.80">
+
+	<!-- Descriptive meta -->
+	<title>Capital BlueCross</title>
+	<meta name="title" content="max 65 character title">
+	<meta name="description" content="max 165 character description">
+	<meta name="keywords" content="comma, separated, list">
+	<meta name="author" content="Capital BlueCross">
+
+	<!-- CDN loaded CSS assets, we are loading these from CDN for performance however assets can be loaded locally if desired -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+
+	<!-- CDN loaded JS assets -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+
+	<!-- These plugins are optional and should only be loaded where video/rotating image banners are used -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vide/0.5.1/jquery.vide.min.js"></script>
+	<script src="assets/js/jquery.bgswitcher.js"></script>
+
+	<!-- CBC specific assets -->
+	<link href="assets/css/app.css" rel="stylesheet"><!-- Global portal stying -->
+	<link href="assets/css/banners.css" rel="stylesheet"><!-- Page banners -->
+	<link href="assets/css/cbc-icons.css" rel="stylesheet"><!-- CBC sprite icon pack -->
+	<script src="assets/js/app.js"></script>
+</head>
+<body id="content" class="lotusui30dojo tundra claro locale_en toolbar-closed" style="padding-top: 167px;">
+	<style>
+		.req {
+			font-weight: 700;
+		}
+		.mobile-toggle-show {
+			display: none;
+		}
+		.hero-banner {
+			height: 840px;
+			overflow: hidden;
+			position: relative;
+			padding: 1.5% 0 0 6%;
+		}
+		.hero-banner img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: auto;
+			z-index: -1;
+		}
+		.hero-container {
+			background-color: rgba(255, 255, 255, 0.84);
+			box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 3%);
+			float: left;
+			padding: 1.5% 4.5% 0;
+			width: 1032px;
+		}
+		.hero-container h1 {
+			font-size: 42px;
+		}
+		.hero-container .lead {
+			font-size: 21px;
+		}
+		.hero-container .small {
+			font-size: 14px;
+		}
+		.hero-content-container {
+			background-color: rgba(255, 255, 255, 0.87);
+			box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 3%);;
+			left: 50%;
+			padding: 1.5% 4.5% 3%;
+			position: absolute;
+			top: 45%;
+			transform: translate(-50%, -50%);
+		}
+		.arrow-link {
+			display: inline-block;
+			position: relative;
+			transition: transform 0.2s ease-in-out;
+		}
+		
+		.arrow-link:hover {
+			transform: translateY(5px) scale(1.1);
+		}
+
+		.arrow-link i {
+			color: #0087c0;
+			font-size: 24pt;
+		}
+		@media (max-width: 1200px) {
+			.nav-container {
+				width: initial;
+			}
+			.hero-banner {
+				height: auto;
+				padding: 39px 0 0;
+			}
+			.hero-container {
+				box-shadow: none;
+				float: none;
+				width: 100%;
+			}
+			.hero-content-container {
+				box-shadow: none;
+				left: initial;
+				padding: 3% 4.5% 6%;
+				position: relative;
+				top: initial;
+				transform: none;
+				width: 100%;
+			}
+		}
+		@media (max-width: 992px) {
+			.hero-banner img {
+				position: initial;
+			}
+			.mobile-toggle-hide {
+				display: none;
+			}
+			.mobile-toggle-show {
+				display: block;
+			}
+		}
+	</style>
+	<script>
+		$(document).ready(function() {
+			$(window).scroll(function() {
+				const scrolled = $(this).scrollTop();
+				const speed = 2; // adjust this to change the scroll speed
+				const offset = scrolled / speed; // divide by speed instead of multiplying
+				$('#heroBanerImage').css('top', offset + 'px'); // use positive offset value
+			});
+
+			// Add click event handler to button
+			$('#heroButton').on('click', function(event) {
+				// Prevent default button behavior
+				event.preventDefault();
+
+				// Get target element's ID and offset value
+				var target = $("form");
+				var offset = 150;
+
+				// Animate scroll to target element
+				$('html, body').animate({
+				scrollTop: target.offset().top - offset
+				}, 1000, function() {
+				// After scroll animation is complete, focus on the first form input field
+				target.find('input[type="text"]').eq(0).focus();
+				});
+			});
+		});
+	</script>
+	<header class="stFixedNavbar">
+		<!-- site toolbar -->
+		<div id="stBanner" class="">
+			<nav class="navbar navbar-default navbar-fixed-top" id="cbcnavdesign" data-swiftype-index="false">
+				<div id="stNavContainer" class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#cbc_main_navigation" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="style-guide.html">
+							<img src="assets/img/global/capital-blue-cross-logo.png" alt="Capital Blue Cross">
+							<!-- cap-logo -->
+						</a>
+					</div>
+				</div>
+				<script>
+					$(document).ready(function () {
+						var height = $($("header #stBanner nav.navbar.navbar-default.navbar-fixed-top")[0]).height();
+						$("body#content").css("padding-top", height + "px");
+					});
+				</script>
+			</nav>
+		</div>
+	</header>
+	<!-- Begin main page content -->
+	<section class="hero-banner content">
+        <img id="heroBanerImage" src="campaign-page-templates/images/woman-on-computer-inside.jpg" alt="Woman on computer inside">
+        <div class="hero-container">
+            <h1>Ready for affordable coverage?</h1>
+            <p class="lead">Complete the form, and we'll be in touch!</p>
+            <form action="" method="POST" id="" class="table">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="firstName"><sup><span class="error">*</span></sup> First name</label>
+                        <input type="text" id="firstName" name="firstName" class="form-control">
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="lastName"><sup><span class="error">*</span></sup> Last name</label>
+                        <input type="text" id="lastName" name="lastName" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="email"><sup><span class="error">*</span></sup> Email</label>
+                        <input type="text" id="email" name="email" class="form-control">
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="phone"><sup><span class="error">*</span></sup> Phone</label>
+                        <input type="text" id="phone" name="phone" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="bestTimeToCall"><sup><span class="error">*</span></sup> Best time to call</label>
+                        <select class="form-control" id="bestTimeToCall" name="bestTimeToCall">
+                            <option></option>
+                            <option value="8 am - 12 pm">8 am - 12 pm</option>
+                            <option value="12 pm - 4 pm">12 pm - 4 pm</option>
+                            <option value="4 pm - 8 pm">4 pm - 8 pm</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="countyOfResidence"><sup><span class="error">*</span></sup> County of residence</label>
+                        <select class="form-control" id="countyOfResidence" name="countyOfResidence">
+                            <option></option>
+                            <option value="Adams">Adams</option>
+                            <option value="Berks">Berks</option>
+                            <option value="Centre">Centre</option>
+                            <option value="Columbia">Columbia</option>
+                            <option value="Cumberland">Cumberland</option>
+                            <option value="Dauphin">Dauphin</option>
+                            <option value="Franklin">Franklin</option>
+                            <option value="Fulton">Fulton</option>
+                            <option value="Juniata">Juniata</option>
+                            <option value="Lancaster">Lancaster</option>
+                            <option value="Lebanon">Lebanon</option>
+                            <option value="Lehigh">Lehigh</option>
+                            <option value="Mifflin">Mifflin</option>
+                            <option value="Montour">Montour</option>
+                            <option value="Northampton">Northampton</option>
+                            <option value="Northumberland">Northumberland</option>
+                            <option value="Perry">Perry</option>
+                            <option value="Schuylkill">Schuylkill</option>
+                            <option value="Snyder">Snyder</option>
+                            <option value="Union">Union</option>
+                            <option value="York">York</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+					<div class="col-sm-12">
+						<p class="form-group small">By clicking on "Submit", I agree that Capital Blue Cross, its affiliates, subsidiaries, agents, and/or InsureMe, Inc may communicate with me by phone, text, or email for transactional, informational, or marketing & telemarketing purposes, including calls and messages made using an automatic telephone dialing system or pre-recorded voice messages. I understand my consent is not a condition of purchasing any goods or services.</p>
+					</div>
+                    <div class="col-sm-3 form-group pull-right">
+						<a href="#" class="btn btn-primary">Submit</a>
+					</div>
+					<div class="col-sm-3 form-group pull-right">
+						<a href="#" class="btn btn-info">Clear</a>
+					</div>
+                </div>
+                <div class="row">
+                    <p class="col-sm-12 small">Or call us now at <a href="tel:8556222583" aria-label="call us now at 855.622.2583">855.622.2583</a>, Monday - Friday 8:00 AM - 11:00 PM, or Saturday - Sunday 8:00 AM - 8:00 PM.</p>
+                </div>
+            </form>
+        </div>
+    </section>
+	<!-- Footer element -->
+	<footer>
+		<div class="progress-wrap">
+			<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+				<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+			</svg>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 information">
+					<h4>Information</h4>
+					<div class="row">
+						<div class="col-sm-3">
+							<p><a href="about.html">About Us</a></p>
+							<p><a href="plain.html">Careers</a></p>
+							<p><a href="plain.html">Code of Conduct</a></p>
+						</div>
+						<div class="col-sm-3">
+							<p><a href="plain.html">Developers</a></p>
+							<p><a href="plain.html">HIPAA</a></p>
+							<p><a href="plain.html">Legal</a></p>
+						</div>
+						<div class="col-sm-3">
+							<p><a href="plain.html">Machine readable directories</a></p>
+							<p><a href="plain.html">Nondiscrimination</a></p>
+							<p><a href="plain.html">Privacy</a></p>
+						</div>
+						<div class="col-sm-3">
+							<p><a href="plain.html">Sitemap</a></p>
+							<p><a href="plain.html">SMS terms of use</a></p>
+							<p><a href="plain.html">Web Accessibility</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 social">
+					<h4>Download our app</h4>
+					<a href="https://itunes.apple.com/nz/app/capital-blue/id690763566" target="_blank"
+						aria-label="Navigate to iPhone App"><em class="fa fa-apple"
+							aria-hidden="true"></em></a>
+					<a href="https://play.google.com/store/apps/details?id=com.capbluecross.membermobileapp"
+						target="_blank" aria-label="Navigate to Android App"><em
+							class="fa fa-android" aria-hidden="true"></em></a>
+					<h4>Follow us</h4>
+					<a href="https://www.facebook.com/Capbluecross/" target="_blank" aria-label="Navigate to Facebook"
+						><em class="fa fa-facebook" aria-hidden="true"></em></a>
+					<a href="https://twitter.com/capbluecross" target="_blank" alt="Twitter icon"
+						aria-label="Navigate to Twitter" class="dark-bg-anchor x"><svg
+							xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+							<style>
+								svg {
+									fill: #fff
+								}
+							</style>
+							<path
+								d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+							</path>
+						</svg></a>
+					<a href="https://www.youtube.com/user/capbluecross" target="_blank" aria-label="Navigate to YouTube"
+						><em class="fa fa-youtube" aria-hidden="true"></em></a>
+					<a href="https://www.pinterest.com/capbluecross/" target="_blank" aria-label="Navigate to Pinterest"
+						><em class="fa fa-pinterest" aria-hidden="true"></em></a>
+					<a href="https://www.linkedin.com/company-beta/21312/?pathWildcard=21312" target="_blank"
+						aria-label="Navigate to LinkedIn"><em class="fa fa-linkedin"
+							aria-hidden="true"></em></a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<p>Health care benefit programs issued or administered by Capital BlueCross and/or its subsidiaries,
+						Capital Advantage Insurance Company<sup>®</sup>, Capital Advantage Assurance Company<sup>®</sup>
+						and Keystone Health Plan<sup>®</sup> Central. Independent licensees of the BlueCross BlueShield
+						Association serving 21 counties in Central Pennsylvania and the Lehigh Valley. Communications
+						issued by Capital BlueCross in its capacity as administrator of programs and provider relations
+						for all companies.</p>
+					<p class="copyright">© 2024 Capital BlueCross All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
